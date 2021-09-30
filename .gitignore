@@ -1,0 +1,18 @@
+##################################################
+
+# files and directories ignored
+
+##################################################
+
+# modulo-01
+
+# atividade-11-e-12
+/modulo-01/serei_ignorado.txt
+
+##################################################
+
+# modulo-02
+
+# atividade-01
+/modulo-02/atividade-01/*.zip
+/modulo-02/atividade-01/*.jpeg
