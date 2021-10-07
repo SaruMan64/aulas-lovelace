@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Biblioteca</title>
+</head>
+<body>
+    <h1>Cadastro Biblioteca</h1>
+    <figure>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Logo_biblioteca_H.jpg/800px-Logo_biblioteca_H.jpg" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Logo_biblioteca_H.jpg/800px-Logo_biblioteca_H.jpg" width="20%" /></a>
+        <figcaption><strong>Fonte:</strong> Retirado do site <i> <a href="https://commons.wikimedia.org/wiki/File:Logo_biblioteca_H.jpg">wikimedia</a></i> </figcaption>
+    </figure>
+    <form>
+        <fieldset>
+            <legend style="color:red">Dados pessoais</legend>
+            <p>
+                <label>Nome: <input type="text" name="first-name"  placeholder="Insira seu nome" size="40" /></label>
+                <label>Sobrenome: <input type="text" name="last-name"  placeholder="Insira seu sobrenome" size="40" /></label>
+            </p>
+            <p>
+                <label>Celular: <input type="tel" name="cellphone" placeholder="ex: (12) 91234-5678" pattern="(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})" maxlength="15" /></label>
+                <label>Fixo: <input type="tel" name="telphone" placeholder="ex: (12) 1234-5678" maxlength="14" /></label>
+            </p>
+            <p>
+                <label>Data de nascimento: <input type="date" name="date"  /></label>
+                <label>Nacinalidade: <input type="text" name=""  placeholder="ex: Brasileiro" size="30" /></label>
+            </p>
+            
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend style="color:red">Endereço</legend>
+            <p>
+                <label>CEP: <input type="text" name="cep" placeholder="ex: 12.456.789" maxlength="10" /></label>
+                <label>Rua/Avenidada: <input type="text" name="street"  placeholder="Insira seu rua/avenidada" size="50"  /></label>
+                <label>Número: <input type="text" name="last-name"  placeholder="ex: 123" maxlength="6" size="10" /></label>
+            </p>
+            <p>
+                <label>Bairro: <input type="text" name="district"  placeholder="Insira seu bairro" size="40" /></label>
+                <label>Cidade: <input type="text" name="city"  placeholder="Insira sua cidade" size="30" /></label>
+                <label>Estado: <input type="text" name="state"  placeholder="Insira sua Estado" size="30" /></label>
+            </p>
+            
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend style="color:red">Usuário</legend>
+            <p /><label><input type="radio" name="user"> Professor</label>
+            <p /><label><input type="radio" name="user"> Estudante</label>
+            <p /><label><input type="radio" name="user"> Funcionário</label>
+            <p /><label><input type="radio" name="user"> Comunidade</label>
+
+            <p>
+                <label>E-mail: <input type="email" placeholder="ex: exemplo@exemplo.com" size="80" /></label>
+                <br />
+                <br />
+                <label>Senha: <input type="password" /></label>
+                <label>Senha novamente: <input type="password" /></label>
+            </p>
+            <p /><label><input type="checkbox" name="iagree"> Li e concordo com os termos de uso</label>
+        </fieldset>
+        <center>
+            <p /><label><input type="reset" /></label>
+            <p /><label><input type="submit" value="Enviar" /></label>
+        </center>
+    </form>
+</body>
+</html>
