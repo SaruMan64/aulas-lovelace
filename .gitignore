@@ -2,7 +2,10 @@
 
 # files and directories ignored
 
+/atividade07
+
 ##################################################
+#
 
 # modulo-01
 
@@ -31,3 +34,13 @@
 # atividade-06
 /modulo-02/atividade-06/*.zip
 /modulo-02/atividade-06/*jpeg
+
+# atividade-07
+/modulo-02/atividade-07/*.jpeg
+/modulo-02/atividade-07/*.zip
+
+# atividade-08
+/modulo-02/atividade-08/*.jpeg
+/modulo-02/atividade-08/*.zip
+
+
