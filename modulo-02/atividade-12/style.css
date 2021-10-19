@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.estilo3{
+    background-color: aqua;;
+    width: 66%;
+    margin-left: 17%;
+}
+.p1, .p2, .p3{
+    text-align: center;
+}
