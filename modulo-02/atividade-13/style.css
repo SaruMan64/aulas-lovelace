@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#div1, #div2, #div3{
+    background-color: grey;
+    padding:20px;
+    margin-top: 5px;
+}
+
+#div1:hover, 
+#div2:hover, 
+#div3:hover{
+    background-color: rgb(71, 165, 42);
+    padding:20px;
+    margin-top: 5px;
+}
+p::first-letter{
+    font-family: cursive;
+    font-size: 30px;
+}
+p::first-line{
+    color:white;
+}
+h1 em, h2 em{
+    color: wheat;
+}
+h1 + h2{
+    font-size: 30px;
+}
+h1:hover, h2:hover{
+    font-size: 50px;
+}
+
+a{
+    color:white;
+}
+
+a[title="olá mundo"]{
+    color:violet;
+}
