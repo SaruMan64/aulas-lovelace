@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding-top: 5vh;
+}
+.pai{
+    margin-left: 5vw;
+}
+h2{
+    display: inline-block;
+    box-sizing: content-box;
+    height: 10vh;
+}
+p{
+    width: 90vw;
+    height: 10vh;
+    background-color: rgb(230, 230, 230);
+}
+.Visible{
+    overflow: visible;
+}
+.Hidden{
+    overflow: hidden;
+}
+.Scroll{
+    overflow: scroll;
+}
+.Auto{
+    overflow: auto;
+}
