@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1{
+    text-align: center;
+    padding-top: 5vh;
+    color: azure;
+}
+
+#conteudo{
+width: 100vw;
+height: 100vh;
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,85,143,1) 50%, rgba(17,26,50,1) 100%);
+}
+
+.circle{
+    margin: auto;
+    margin-top: 15vh;
+    width: 50vh;
+    height: 50vh;
+    border-radius:50%;
+    background-image: url("https://avatars.githubusercontent.com/u/39843895?v=4");
+    background-size: cover;
+    border: groove 2px black;
+    box-shadow: 15px 15px  10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 15px 15px  10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 15px 15px  10px rgba(0,0,0,0.6);
+    -o-box-shadow: 15px 15px  10px rgba(0,0,0,0.6);
+}

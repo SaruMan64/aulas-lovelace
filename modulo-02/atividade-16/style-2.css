@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+h1{
+    text-align: center;
+    padding-top: 5vh;
+}
+#conteudo{
+    width: 60vh;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 50px;
+    border: groove 10% transparent;
+    border-radius: 20%;
+    background-image: linear-gradient(turquoise, greenyellow);
+}
+.square{
+    box-sizing: border-box;
+    width: calc(100%/3);
+    height: calc(100%/3);
+    float: left;
+}
+.square:nth-child(odd) {
+    border-radius:50%;
+    border: double 10px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at left, greenyellow, turquoise);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+	}
+.square:nth-child(even) {
+	background-color:#f1f1f1;
+    border-radius: 30%;
+    border: double 10px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at left, greenyellow, turquoise);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.square:hover{
+    background-image: radial-gradient(circle at center, greenyellow, turquoise), radial-gradient(circle at left, white, white);
+}
