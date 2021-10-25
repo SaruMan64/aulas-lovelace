@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+}
+body{
+    background-color:darkkhaki;
+}
+
+section > h1, section > h3{
+    text-align: center;
+}
+section > h1{
+    font-size: 100px;
+    font-weight:200;
+    font-family: cursive;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(85,107,47,1) 50%, rgba(17,26,50,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section > img{
+    width: calc(100% / 3);
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 3px 3px 3px 2px rgba(56, 126, 56, 0.2);
+}
+article{
+    margin: 1vw 10vw 0px 10vw;
+}
+article > p{
+    margin: 10px 10px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+article > h3, span{
+    font-family: Trattatello, fantasy;
+    font-weight: 600;
+    color: black;
+    text-decoration: underline wavy darkolivegreen;
+}
+span{
+    color: rgb(21, 112, 21);
+    font-size: 21px;
+}
+span:hover{
+    font-size: 25px;
+}
+p > label{
+    padding: 10px;
+    width: 20vw;
+    text-align: center;
+    float: right;
+}
+label > img{
+    width: 20vw;
+    border-radius: 50px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: blue;
+}

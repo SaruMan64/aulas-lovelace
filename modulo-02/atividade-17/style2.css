@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: tomato;
+}
+.ola {
+    writing-mode: vertical-rl;
+    margin-left: 50vw;
+    margin-top: 13px;
+    font: 26px Monaco, MonoSpace;
+    font-weight: 300;
+  }
+
+h1 span {
+    margin-left: 50vw;
+    font: 26px Monaco, MonoSpace;
+    font-weight: 300;
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+  }
+
+.c14{
+    transform: rotate(-6deg);
+}
+.c13{
+    transform: rotate(-12deg);
+}
+.c12{
+    transform: rotate(-18deg);
+}
+.c11{
+    transform: rotate(-24deg);
+}
+.c10{
+    transform: rotate(-30deg);
+}
+.c9{
+    transform: rotate(-36deg);
+}
+.c8{
+    transform: rotate(-42deg);
+}
+.c7{
+    transform: rotate(-48deg);
+}
+.c6{
+    transform: rotate(-54deg);
+}
+.c5{
+    transform: rotate(-60deg);
+}
+.c4{
+    transform: rotate(-66deg);
+}
+.c3{
+    transform: rotate(-78deg);
+}
+.c2{
+    transform: rotate(-84deg);
+}
+.c1{
+    transform: rotate(-90deg);
+}
+
+.textos{
+    margin: 50px;
+}
+.caixa {
+    inline-size: 250px;
+    font-size: 20px;
+  }
+  
+  .horizontal {
+    writing-mode: horizontal-tb;
+    float: left;
+    margin-left: 32%;
+  }
+  
+  .vertical {
+    writing-mode: vertical-rl;
+    float: inline-start;
+  }
