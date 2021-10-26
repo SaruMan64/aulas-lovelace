@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "beatles_regular";
+  src: url("beatlesdemo-webfont.woff2") format("woff2"),
+    url("beatlesdemo-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "beatles_bold";
+  src: url("beatlesdemo-bold-webfont.woff2") format("woff2"),
+    url("beatlesdemo-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  font-family: "beatles_regular";
+}
+body {
+    width: 1200px;
+    margin: auto;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(150,150,150,1) 100%); 
+  }
+
+h1{
+    margin: 50px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+section > p, section > h3{
+    width: 600px;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+footer > p{
+    text-align: center;
+    font-size: 1.5rem;
+}

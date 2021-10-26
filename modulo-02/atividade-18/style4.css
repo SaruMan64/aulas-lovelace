@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: "Tangerine", serif;
+  font-size: 48px;
+  width: 1200px;
+  margin: auto;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(150, 150, 150, 1) 100%
+  );
+}
+
+h1 {
+  margin: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+section > p,
+section > h3 {
+  width: 600px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 1.5rem;
+}
