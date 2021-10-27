@@ -1,11 +1,11 @@
 * {
+  font-size: 25px;
   margin: 0;
   padding: 0;
   border: 0;
 }
 body {
   font-family: "Tangerine", serif;
-  font-size: 48px;
   width: 1200px;
   margin: auto;
   background: radial-gradient(
