@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: grey;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 99vh;
+    height: 99vh;
+    box-sizing: border-box;
+    border:0.25vh solid rgba(0, 0, 0, 0.445);
+    background: chocolate;
+    border-radius: 10PX;
+    box-shadow: 0.35vh 0.35vh 2px 4px rgba(210, 105, 30, .8);
+}
+
+.letra{
+    display: flex;
+    flex-direction: row;
+    width: 99.5vh;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+.numero{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 90vh;
+    width: 4vh;
+    justify-content: space-around;
+}
+li{
+    display: inline;
+    text-align: center;
+    font-size: 50px;
+}
+.letra li{
+    width: calc(90vh / 8);
+}
+.numero li{
+    height: calc(90vh / 16);
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 90vh;
+    border: 2px solid black;
+}
+main section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section div:nth-child(even){
+    flex-direction: row;
+}
+main section div:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.square:nth-child(even){
+    width: calc(90vh / 8);
+    height: calc(90vh / 8);
+    background: burlywood;
+}
+.square:nth-child(odd){
+    width: calc(90vh / 8);
+    height: calc(90vh / 8);
+    background: black;
+}
