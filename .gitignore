@@ -4,6 +4,7 @@
 
 /atividade07
 /atividade-11
+/Desafios
 
 ##################################################
 #
@@ -95,3 +96,7 @@
 # atividade-21
 /modulo-02/atividade-21/*.zip
 /modulo-02/atividade-21/*.jpeg
+
+# atividade-23
+/modulo-02/atividade-23/*.zip
+/modulo-02/atividade-23/*.jpeg
