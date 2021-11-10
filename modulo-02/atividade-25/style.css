@@ -1,0 +1,528 @@
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Overlock Italic"), local("Overlock-Italic"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XTDmdMWRiN1_T9Z7Tc2OCsk5OB_CrqjQ.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Overlock Italic"), local("Overlock-Italic"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XTDmdMWRiN1_T9Z7Tc2O6sk5OB_Co.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Overlock Bold Italic"), local("Overlock-BoldItalic"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XQDmdMWRiN1_T9Z7Tc0FWJhrCj8QDQhNpHvg.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Overlock Bold Italic"), local("Overlock-BoldItalic"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XQDmdMWRiN1_T9Z7Tc0FWJhr6j8QDQhNo.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Overlock Regular"), local("Overlock-Regular"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XVDmdMWRiN1_T9Z7TX6OymlLGDzCs.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Overlock Regular"), local("Overlock-Regular"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XVDmdMWRiN1_T9Z7TZ6OymlLGD.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Overlock Bold"), local("Overlock-Bold"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XSDmdMWRiN1_T9Z7xizfmFtryp9iLStNs.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: "Overlock";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Overlock Bold"), local("Overlock-Bold"),
+    url(https://fonts.gstatic.com/s/overlock/v9/Z9XSDmdMWRiN1_T9Z7xizfmLtryp9iLS.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: "Enriqueta";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Enriqueta Regular"), local("Enriqueta-Regular"),
+    url(https://fonts.gstatic.com/s/enriqueta/v9/goksH6L7AUFrRvV44HVjQkqisv5Io53K.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: "Enriqueta";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Enriqueta Regular"), local("Enriqueta-Regular"),
+    url(https://fonts.gstatic.com/s/enriqueta/v9/goksH6L7AUFrRvV44HVjTEqisv5Iow.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: "Enriqueta";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Enriqueta Bold"), local("Enriqueta-Bold"),
+    url(https://fonts.gstatic.com/s/enriqueta/v9/gokpH6L7AUFrRvV44HVr92-3kdxFiafDFtAi.woff2)
+      format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: "Enriqueta";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Enriqueta Bold"), local("Enriqueta-Bold"),
+    url(https://fonts.gstatic.com/s/enriqueta/v9/gokpH6L7AUFrRvV44HVr92-3n9xFiafDFg.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: "Museo-Slab-W01-100";
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/01ab709f-22cf-4831-b24a-8cf4eb852687.eot?#iefix");
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/01ab709f-22cf-4831-b24a-8cf4eb852687.eot?#iefix")
+      format("eot"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cacc0862-f146-4746-92b1-60e6114a66c4.woff")
+      format("woff"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/54006f54-b61e-4103-abf8-b1d0294a2a9c.ttf")
+      format("truetype"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e5841f2e-b306-4583-bfc3-a0e06742fedd.svg#e5841f2e-b306-4583-bfc3-a0e06742fedd")
+      format("svg");
+}
+@font-face {
+  font-display: block;
+  font-family: "Proxima-N-W01-Reg";
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix");
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix")
+      format("eot"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2")
+      format("woff2"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff")
+      format("woff"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf")
+      format("truetype"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235")
+      format("svg");
+}
+@font-face {
+  font-display: block;
+  font-family: "DIN-Next-W01-Light";
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix");
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix")
+      format("eot"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff")
+      format("woff"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf")
+      format("truetype"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694")
+      format("svg");
+}
+@font-face {
+  font-display: block;
+  font-family: "DIN-Next-W02-Light";
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/48e5a0e1-2d56-46e5-8fc4-3d6d5c973cbf.eot?#iefix");
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/48e5a0e1-2d56-46e5-8fc4-3d6d5c973cbf.eot?#iefix")
+      format("eot"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/07d62b21-8d7a-4c36-be86-d32ab1089972.woff")
+      format("woff"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c0050890-bbed-44b9-94df-2611d72dbb06.ttf")
+      format("truetype"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9f774d17-c03a-418e-a375-34f3beecbc7a.svg#9f774d17-c03a-418e-a375-34f3beecbc7a")
+      format("svg");
+}
+@font-face {
+  font-display: block;
+  font-family: "DIN-Next-W10-Light";
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3d009cd7-c8fe-40c0-93da-74f4ea8c530b.eot?#iefix");
+  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3d009cd7-c8fe-40c0-93da-74f4ea8c530b.eot?#iefix")
+      format("eot"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/a9e95a29-98a7-404a-90ee-1929ad09c696.woff")
+      format("woff"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0a7663fd-eae8-4e50-a67a-225271f8cceb.ttf")
+      format("truetype"),
+    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/58ae9be9-5d95-44b6-8b6c-e6da6a46822c.svg#58ae9be9-5d95-44b6-8b6c-e6da6a46822c")
+      format("svg");
+}
+
+:root {
+  --font_0: normal normal bold 30px/1.4em overlock, sans-serif;
+  --font_1: normal normal bold 14px/1.1em Enriqueta, serif;
+  --font_2: normal normal bold 35px/1.4em museo-slab-w01-100, serif;
+  --font_3: normal normal bold 60px/1.4em museo-slab-w01-100, serif;
+  --font_4: normal normal bold 33px/1.4em museo-slab-w01-100, serif;
+  --font_5: normal normal bold 28px/1.4em museo-slab-w01-100, serif;
+  --font_6: normal normal bold 20px/1.4em museo-slab-w01-100, serif;
+  --font_7: normal normal normal 17px/1.4em proxima-n-w01-reg, sans-serif;
+  --font_8: normal normal normal 15px/1.4em proxima-n-w01-reg, sans-serif;
+  --font_9: normal normal normal 13px/1.4em proxima-n-w01-reg, sans-serif;
+  --font_10: normal normal normal 10px/1.3em Enriqueta, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  background-color: rgb(249, 209, 149);
+}
+body {
+  width: 980px;
+  margin: auto;
+  color: rgb(104, 57, 26);
+}
+
+/* header */
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 337px;
+}
+header figure {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header figure > div:first-child {
+  position: relative;
+  top: 28px;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(153, 227, 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header figure div:first-child img {
+  position: relative;
+  margin-bottom: 10px;
+}
+header svg {
+  z-index: -1;
+  position: absolute;
+  margin-bottom: -14px;
+  width: 425px;
+  height: 74px;
+  fill: rgb(255, 255, 255);
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  height: 54px;
+  font: var(--font_0);
+  line-height: 1.1em;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: rgb(104, 57, 26);
+}
+header span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: 425px;
+  font: var(--font_6);
+  line-height: 1.3em;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: normal;
+  color: rgb(104, 57, 26);
+}
+
+header nav {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  list-style: none;
+}
+header li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(153, 227, 236);
+  width: 159px;
+  height: 45px;
+}
+header .active,
+header li a:hover {
+  color: rgb(103, 189, 199);
+  transition: color 500ms;
+}
+header li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 153px;
+  height: 39px;
+  text-decoration: none;
+  font: var(--font_8);
+  color: rgb(104, 57, 26);
+  background-color: rgb(255, 255, 255);
+}
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel {
+  box-sizing: border-box;
+  width: 980px;
+  height: 537px;
+  background-color: rgb(255, 255, 255);
+  border: 7px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slider {
+  position: absolute;
+  width: 966px;
+  height: 100%;
+  overflow: hidden;
+}
+.banner img {
+  object-fit: cover;
+}
+.banner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation: slideToLeft 12s ease infinite;
+  animation: slideToLeft 12s ease infinite;
+}
+.banner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideToLeft {
+  0%,
+  30% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  33%,
+  63% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  66%,
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
+
+.mini-carousel {
+  position: relative;
+  width: 100%;
+  margin-top: 22px;
+}
+.mini-slider {
+  width: 100%;
+  height: 234px;
+  overflow: hidden;
+}
+.mini {
+  display: flex;
+  gap: 15px;
+}
+.mini img {
+  box-sizing: border-box;
+  width: 234px;
+  height: 234px;
+  border: 7px solid #fff;
+}
+
+.mini {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation: slideToLeft 12s ease infinite;
+  animation: slideToLeft 12s ease infinite;
+}
+.mini:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideToLeft {
+  0%,
+  30% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  33%,
+  63% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  66%,
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
+
+.hr {
+  width: 100%;
+  height: 37px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+.hr svg {
+  height: 100%;
+  fill: #fff;
+}
+main section:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;;
+}
+main section:last-child figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 300px;
+}
+main section:last-child img {
+    vertical-align: middle;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  height: 84px;
+}
+main section:last-child h2 {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.2em;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: normal;
+  font: var(--font_5);
+}
+main ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main a {
+  color: inherit;
+  font: var(--font_7);
+  font-size: 17px;
+  line-height: normal;
+  letter-spacing: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+footer p,
+footer a {
+  color: rgb(148, 106, 78);
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: normal;
+  font: var(--font_9);
+}
