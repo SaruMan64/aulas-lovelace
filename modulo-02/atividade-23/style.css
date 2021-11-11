@@ -457,12 +457,12 @@ main .banner {
   border-top: 0px solid;
 }
 .categories figure:first-child {
-  background-image: url(/img/category-1.webp);
+  background-image: url("/img/category-1.webp");
   background-size: cover;
   border-right: 1px solid;
 }
 .categories figure:last-child {
-  background-image: url(/img/category-2.webp);
+  background-image: url("/img/category-2.webp");
   background-size: cover;
   border-left: 1px solid;
 }
