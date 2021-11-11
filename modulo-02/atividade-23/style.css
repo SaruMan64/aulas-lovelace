@@ -67,157 +67,34 @@
     url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401")
       format("svg");
 }
-@font-face {
-  font-display: block;
-  font-family: "Proxima-N-W01-Reg";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/64017d81-9430-4cba-8219-8f5cc28b923e.woff2")
-      format("woff2"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e56ecb6d-da41-4bd9-982d-2d295bec9ab0.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/2aff4f81-3e97-4a83-9e6c-45e33c024796.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "Helvetica-W01-Roman";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ea95b44a-eab7-4bd1-861c-e73535e7f652.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ea95b44a-eab7-4bd1-861c-e73535e7f652.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4021a3b9-f782-438b-aeb4-c008109a8b64.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/669f79ed-002c-4ff6-965c-9da453968504.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d17bc040-9e8b-4397-8356-8153f4a64edf.svg#d17bc040-9e8b-4397-8356-8153f4a64edf")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "Helvetica-W02-Roman";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e4bd4516-4480-43df-aa6e-4e9b9029f53e.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b56b944e-bbe0-4450-a241-de2125d3e682.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7da02f05-ae8b-43a1-aeb9-83b3c0527c06.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/66cac56e-d017-4544-9d0c-f7d978f0c5c2.svg#66cac56e-d017-4544-9d0c-f7d978f0c5c2")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "Helvetica-LT-W10-Roman";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/686a6a06-e711-4bd2-b393-8504a497bb3c.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/686a6a06-e711-4bd2-b393-8504a497bb3c.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6f8d1983-4d34-4fa4-9110-988f6c495757.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7903ee3f-e9ab-4bdc-b7d2-d232de2da580.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9c58e9ea-fdea-4b9c-b0f9-0a2157389ed0.svg#9c58e9ea-fdea-4b9c-b0f9-0a2157389ed0")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "Avenir-LT-W01_35-Light1475496";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2")
-      format("woff2"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/908c4810-64db-4b46-bb8e-823eb41f68c0.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "Avenir-LT-W01_85-Heavy1475544";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d513e15e-8f35-4129-ad05-481815e52625.woff2")
-      format("woff2"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/61bd362e-7162-46bd-b67e-28f366c4afbe.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401")
-      format("svg");
-}
 
 :root {
   --color_0: 255, 255, 255;
   --color_1: 0, 0, 0;
   --color_2: 163, 217, 246;
   --color_3: 237, 28, 36;
-  --color_4: 0, 136, 203;
-  --color_5: 255, 203, 5;
-  --color_6: 114, 114, 114;
-  --color_7: 176, 176, 176;
-  --color_8: 255, 255, 255;
-  --color_9: 114, 114, 114;
-  --color_10: 176, 176, 176;
-  --color_11: 255, 255, 255;
-  --color_12: 232, 230, 230;
-  --color_13: 199, 199, 199;
-  --color_14: 118, 118, 116;
-  --color_15: 0, 0, 0;
-  --color_16: 252, 189, 175;
-  --color_17: 250, 156, 135;
-  --color_18: 226, 48, 8;
-  --color_19: 165, 41, 13;
-  --color_20: 82, 20, 7;
-  --color_21: 180, 187, 249;
-  --color_22: 143, 153, 243;
-  --color_23: 41, 61, 237;
-  --color_24: 27, 41, 158;
-  --color_25: 14, 20, 79;
-  --color_26: 200, 174, 235;
-  --color_27: 167, 131, 214;
-  --color_28: 108, 43, 194;
-  --color_29: 72, 29, 129;
-  --color_30: 36, 14, 65;
-  --color_31: 177, 211, 187;
-  --color_32: 127, 168, 139;
-  --color_33: 64, 124, 81;
-  --color_34: 43, 83, 54;
-  --color_35: 21, 41, 27;
+  --color_4: 255, 255, 255;
+  --color_5: 118, 118, 116;
+  --color_6: 0, 0, 0;
+  --color_7: 226, 48, 8;
   --font_0: normal normal bold 47px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
   --font_1: normal normal normal 16px/1.4em din-next-w01-light,
     din-next-w02-light, din-next-w10-light, sans-serif;
   --font_2: normal normal normal 25px/1.4em avenir-lt-w01_85-heavy1475544,
     sans-serif;
-  --font_3: normal normal normal 20px/1.4em avenir-lt-w01_85-heavy1475544,
+  --font_3: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
   --font_4: normal normal normal 22px/1.4em avenir-lt-w01_85-heavy1475544,
     sans-serif;
   --font_5: normal normal normal 25px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-  --font_6: normal normal normal 22px/1.4em proxima-n-w01-reg, sans-serif;
-  --font_7: normal normal normal 22px/1.4em avenir-lt-w01_35-light1475496,
+  --font_6: normal normal normal 22px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-  --font_8: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,
+  --font_7: normal normal normal 16px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-  --font_9: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
+  --font_8: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-  --font_10: normal normal normal 12px/1.4em din-next-w01-light,
-    din-next-w02-light, din-next-w10-light, sans-serif;
-  --fnt: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
-    sans-serif;
-  --wix-ads-height: 0px;
-  --wix-ads-top-height: 0px;
-  --site-width: 980px;
-  --above-all-z-index: 100000;
-  --minViewportSize: 320;
-  --maxViewportSize: 1920;
 }
 
 * {
@@ -240,14 +117,14 @@ header {
 header section:first-child {
   height: 4.5vh;
   border-bottom: 2px solid black;
-  background-color: rgb(var(--color_18));
+  background-color: rgb(var(--color_7));
   display: flex;
   justify-content: center;
   align-items: center;
 }
 header section span {
-  font: var(--font_8);
-  color: rgb(var(--color_15));
+  font: var(--font_7);
+  color: rgb(var(--color_6));
   font-size: 16px;
   letter-spacing: 0.15em;
   vertical-align: baseline;
@@ -255,7 +132,7 @@ header section span {
   width: 570px;
 }
 header section span a {
-  color: rgb(var(--color_15));
+  color: rgb(var(--color_6));
 }
 header section:last-child {
   display: flex;
@@ -301,7 +178,7 @@ nav {
   padding-right: 4.5%;
 }
 nav ul {
-  font: var(--fnt, --font_1);
+  font: var(--font_3, --font_1);
   list-style: none;
 }
 nav ul li {
@@ -315,7 +192,7 @@ nav ul li a {
   color: rgb(var(--color_1));
 }
 nav .active {
-  color: rgb(var(--color_18));
+  color: rgb(var(--color_7));
 }
 nav ul li ul {
   position: absolute;
@@ -340,11 +217,11 @@ nav ul li:hover ul {
 }
 nav ul li a:hover,
 nav ul li ul li a:hover {
-  color: rgb(var(--color_18));
+  color: rgb(var(--color_7));
 }
 .log-in {
-  font: var(--fnt);
-  color: rgb(var(--color_15));
+  font: var(--font_3);
+  color: rgb(var(--color_6));
   background-color: transparent;
   padding-left: 7px;
   padding-right: 7px;
@@ -353,7 +230,7 @@ nav ul li ul li a:hover {
   cursor: pointer;
 }
 .log-in:hover {
-  color: rgb(var(--color_14));
+  color: rgb(var(--color_5));
 }
 #cart {
   width: 39px;
@@ -387,7 +264,7 @@ main .banner {
   width: 709px;
   margin: 129px 0px 10px calc((100% - 980px) * 0);
   left: 86px;
-  background-color: rgba(var(--color_11), 0.95);
+  background-color: rgba(var(--color_4), 0.95);
   border: 2px solid;
   align-self: start;
 }
@@ -396,7 +273,7 @@ main .banner {
   margin: 44px 0px 19px 0;
   left: 47px;
   font: var(--font_0);
-  color: var(--color_15);
+  color: var(--color_6);
   font-size: 47px;
   line-height: 1.4em;
   letter-spacing: 0.05em;
@@ -409,8 +286,8 @@ main .banner {
   margin: 44px 0px 19px 0;
   line-height: 1.4em;
   font-size: 22px;
-  font: var(--font_7);
-  color: rgb(var(--color_15));
+  font: var(--font_6);
+  color: rgb(var(--color_6));
   letter-spacing: 0.03em;
 }
 .banner article button {
@@ -422,7 +299,7 @@ main .banner {
   box-sizing: border-box;
   border: 2px solid;
   background-color: transparent;
-  font: var(--fnt);
+  font: var(--font_3);
 }
 .banner article button:hover {
   background-color: rgb(var(--color_1));
@@ -440,7 +317,7 @@ main .banner {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   font: var(--font_2);
-  color: rgb(var(--color_15));
+  color: rgb(var(--color_6));
   letter-spacing: 0.05em;
   font-size: 25px;
 }
@@ -472,7 +349,7 @@ main .banner {
   box-sizing: border-box;
   border: 2px solid;
   background-color: rgb(var(--color_0));
-  font: var(--fnt);
+  font: var(--font_3);
 }
 .categories button:hover {
   background-color: rgb(var(--color_1));
@@ -486,7 +363,7 @@ main .banner {
   scrollbar-width: none;
   margin-bottom: 80px;
 }
-.product:not(:first-child){
+.product:not(:first-child) {
   margin-left: 40px;
 }
 .product figure p {
@@ -498,7 +375,7 @@ main .banner {
   padding: 5px 10px;
   text-align: center;
   white-space: nowrap;
-  font: var(--font_8);
+  font: var(--font_7);
   color: rgb(var(--color_0));
   box-sizing: content-box;
 }
@@ -524,14 +401,14 @@ main .banner {
   line-height: 30px;
   cursor: pointer;
 }
-.product > p{
+.product > p {
   font: var(--font_5);
   font-size: 16px;
-  color: rgb(var(--color_14));
+  color: rgb(var(--color_5));
   text-align: center;
   cursor: pointer;
 }
-.product button{
+.product button {
   margin-top: 12px;
   width: 100%;
   height: 44px;
@@ -542,10 +419,10 @@ main .banner {
   border: 2px solid black;
   background-color: transparent;
 }
-.product button:hover{
-  color: rgb(var(--color_14));
+.product button:hover {
+  color: rgb(var(--color_5));
 }
-#offers{
+#offers {
   display: flex;
   overflow-x: auto;
   scrollbar-width: none;
@@ -560,7 +437,7 @@ main .banner {
   cursor: pointer;
 }
 .new {
-  background-color: rgb(var(--color_18));
+  background-color: rgb(var(--color_7));
   height: 413px;
 }
 .new div {
@@ -573,7 +450,7 @@ main .banner {
 }
 .new h2 {
   font: var(--font_0);
-  color: rgb(var(--color_15));
+  color: rgb(var(--color_6));
   text-align: center;
   font-size: 47px;
   margin-top: 57px;
@@ -586,8 +463,8 @@ main .banner {
   text-align: center;
   font-size: 22px;
   letter-spacing: 0.03em;
-  font: var(--font_7);
-  color: rgb(var(--color_15));
+  font: var(--font_6);
+  color: rgb(var(--color_6));
   margin-bottom: 43px;
 }
 .new button {
@@ -596,7 +473,7 @@ main .banner {
   box-sizing: border-box;
   border: 2px solid;
   background-color: rgb(var(--color_0));
-  font: var(--fnt);
+  font: var(--font_3);
 }
 .new button:hover {
   background-color: rgb(var(--color_1));
@@ -633,15 +510,15 @@ footer ul {
 }
 .newsletter h2 {
   font: var(--font_2);
-  color: rgb(var(--color_15));
+  color: rgb(var(--color_6));
   font-size: 25px;
   letter-spacing: 0.05em;
   margin: 59px 0 25px 0;
   text-align: left;
 }
 .newsletter p {
-  font: var(--font_8);
-  color: rgb(var(--color_15));
+  font: var(--font_7);
+  color: rgb(var(--color_6));
   line-height: 2em;
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -655,13 +532,13 @@ footer ul {
   flex-direction: column;
 }
 .newsletter label {
-  font: var(--font_8);
-  color: rgb(var(--color_15));
+  font: var(--font_7);
+  color: rgb(var(--color_6));
   line-height: 1;
 }
 .newsletter input {
   height: 25px;
-  border-bottom: 2px solid rgba(var(--color_18), 1);
+  border-bottom: 2px solid rgba(var(--color_7), 1);
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -673,7 +550,7 @@ footer ul {
   box-sizing: border-box;
   border: 2px solid;
   background-color: rgb(var(--color_0));
-  font: var(--fnt);
+  font: var(--font_3);
 }
 .newsletter button:hover {
   background-color: rgb(var(--color_1));
@@ -696,22 +573,22 @@ footer ul {
 }
 .footermenu h2 {
   font: var(--font_2);
-  color: rgb(var(--color_15));
+  color: rgb(var(--color_6));
   font-size: 25px;
   letter-spacing: 0.05em;
   margin: 59px 0 25px 0;
   text-align: left;
 }
 .footermenu p {
-  font: var(--font_8);
-  color: rgb(var(--color_15));
+  font: var(--font_7);
+  color: rgb(var(--color_6));
   line-height: 2em;
   font-size: 16px;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
 .footermenu a {
-  color: rgb(var(--color_15));
+  color: rgb(var(--color_6));
   text-decoration: none;
 }
 .footer ul {
@@ -728,12 +605,12 @@ footer ul {
   box-sizing: border-box;
   border: 2px solid black;
   border-top: 1px solid;
-  background-color: rgb(var(--color_18));
+  background-color: rgb(var(--color_7));
   height: 5.5vh;
 }
 .copyright span,
 .copyright a {
-  font: var(--font_9);
+  font: var(--font_8);
   color: rgb(var(--color_1));
   text-decoration: none;
   font-size: 14px;
