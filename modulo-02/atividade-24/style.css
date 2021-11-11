@@ -23,45 +23,6 @@
 }
 @font-face {
   font-display: block;
-  font-family: "DIN-Next-W01-Light";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3e0b2cd7-9657-438b-b4af-e04122e8f1f7.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/bc176270-17fa-4c78-a343-9fe52824e501.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3516f91d-ac48-42cd-acfe-1be691152cc4.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d1b1e866-a411-42ba-8f75-72bf28e23694.svg#d1b1e866-a411-42ba-8f75-72bf28e23694")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "DIN-Next-W02-Light";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/48e5a0e1-2d56-46e5-8fc4-3d6d5c973cbf.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/48e5a0e1-2d56-46e5-8fc4-3d6d5c973cbf.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/07d62b21-8d7a-4c36-be86-d32ab1089972.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c0050890-bbed-44b9-94df-2611d72dbb06.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/9f774d17-c03a-418e-a375-34f3beecbc7a.svg#9f774d17-c03a-418e-a375-34f3beecbc7a")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "DIN-Next-W10-Light";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3d009cd7-c8fe-40c0-93da-74f4ea8c530b.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/3d009cd7-c8fe-40c0-93da-74f4ea8c530b.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/a9e95a29-98a7-404a-90ee-1929ad09c696.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0a7663fd-eae8-4e50-a67a-225271f8cceb.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/58ae9be9-5d95-44b6-8b6c-e6da6a46822c.svg#58ae9be9-5d95-44b6-8b6c-e6da6a46822c")
-      format("svg");
-}
-@font-face {
-  font-display: block;
   font-family: "Proxima-N-W01-Reg";
   src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix");
   src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/7e90123f-e4a7-4689-b41f-6bcfe331c00a.eot?#iefix")
@@ -75,36 +36,6 @@
     url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ab9cd062-380f-4b53-b1a7-c0bec7402235.svg#ab9cd062-380f-4b53-b1a7-c0bec7402235")
       format("svg");
 }
-@font-face {
-  font-display: block;
-  font-family: "Avenir-LT-W01_35-Light1475496";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2")
-      format("woff2"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/908c4810-64db-4b46-bb8e-823eb41f68c0.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c")
-      format("svg");
-}
-@font-face {
-  font-display: block;
-  font-family: "Avenir-LT-W01_85-Heavy1475544";
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix");
-  src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/6af9989e-235b-4c75-8c08-a83bdaef3f66.eot?#iefix")
-      format("eot"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/d513e15e-8f35-4129-ad05-481815e52625.woff2")
-      format("woff2"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/61bd362e-7162-46bd-b67e-28f366c4afbe.woff")
-      format("woff"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/ccd17c6b-e7ed-4b73-b0d2-76712a4ef46b.ttf")
-      format("truetype"),
-    url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/20577853-40a7-4ada-a3fb-dd6e9392f401.svg#20577853-40a7-4ada-a3fb-dd6e9392f401")
-      format("svg");
-}
 
 :root {
   --color-0: rgba(0, 0, 0, 1);
@@ -114,23 +45,11 @@
   --color-4: rgba(255, 255, 255, 1);
   --color-5: rgba(102, 101, 101, 1);
   --color-6: rgba(102, 101, 101, 0.692);
-
   --font_0: normal normal normal 40px/1.4em "chelsea market", fantasy;
-  --font_1: normal normal normal 16px/1.4em din-next-w01-light,
-    din-next-w02-light, din-next-w10-light, sans-serif;
-  --font_2: normal normal normal 35px/1.4em "chelsea market", fantasy;
-  --font_3: normal normal normal 70px/1.4em "chelsea market", fantasy;
-  --font_4: normal normal normal 40px/1.4em din-next-w01-light,
-    din-next-w02-light, din-next-w10-light, sans-serif;
-  --font_5: normal normal normal 25px/1.4em din-next-w01-light,
-    din-next-w02-light, din-next-w10-light, sans-serif;
-  --font_6: normal normal normal 22px/1.4em "chelsea market", fantasy;
-  --color_25: 62, 44, 51;
-  --font_7: normal normal normal 16px/1.4em proxima-n-w01-reg, sans-serif;
-  --font_8: normal normal normal 15px/1.4em proxima-n-w01-reg, sans-serif;
-  --font_9: normal normal normal 14px/1.4em proxima-n-w01-reg, sans-serif;
-  --font_10: normal normal normal 12px/1.4em din-next-w01-light,
-    din-next-w02-light, din-next-w10-light, sans-serif;
+  --font_1: normal normal normal 35px/1.4em "chelsea market", fantasy;
+  --font_2: normal normal normal 70px/1.4em "chelsea market", fantasy;
+  --font_3: normal normal normal 16px/1.4em proxima-n-w01-reg, sans-serif;
+  --font_4: normal normal normal 14px/1.4em proxima-n-w01-reg, sans-serif;
 }
 
 * {
@@ -191,7 +110,7 @@ header h1 a {
 }
 header > p a {
   width: 100%;
-  font: var(--font_7);
+  font: var(--font_3);
   font-weight: bold;
   text-align: center;
   font-size: 16px;
@@ -230,7 +149,7 @@ header > p {
   width: 100%;
   height: 31px;
   text-align: center;
-  font: var(--font_9);
+  font: var(--font_4);
   color: var(--color-0);
   text-decoration: none;
 }
@@ -254,7 +173,7 @@ header > p {
 .menu li ul li a {
   display: block;
   text-align: center;
-  font: var(--font_9);
+  font: var(--font_4);
   color: var(--color-0);
   text-decoration: none;
   display: flex;
@@ -278,7 +197,7 @@ header > p {
   z-index: 2;
 }
 .carousel > div > h2 {
-  font: var(--font_3);
+  font: var(--font_2);
   font-size: 70px;
   line-height: 1em;
   text-align: center;
@@ -289,7 +208,7 @@ header > p {
 .carousel > div > span {
   text-align: center;
   font-size: 16px;
-  font: var(--font_7);
+  font: var(--font_3);
   color: var(--color-4);
 }
 .slider {
@@ -362,7 +281,7 @@ header > p {
   margin-bottom: 67px;
 }
 .text > h2 {
-  font: var(--font_2);
+  font: var(--font_1);
   color: var(--color-1);
   font-size: 35px;
   letter-spacing: 0em;
@@ -370,14 +289,14 @@ header > p {
   margin-bottom: 12px;
 }
 .text > span {
-  font: var(--font_9);
+  font: var(--font_4);
   color: var(--color-5);
   line-height: normal;
   letter-spacing: normal;
   font-size: 15px;
 }
 article > h2 {
-  font: var(--font_2);
+  font: var(--font_1);
   color: var(--color-1);
   font-size: 22px;
   letter-spacing: 0em;
@@ -385,7 +304,7 @@ article > h2 {
   margin-bottom: 12px;
 }
 article > p {
-  font: var(--font_9);
+  font: var(--font_4);
   color: var(--color-5);
   line-height: normal;
   letter-spacing: normal;
@@ -440,7 +359,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: var(--color-1);
-  font: var(--font_7);
+  font: var(--font_3);
   color: var(--color-2);
   font-size: 15px;
   line-height: normal;
