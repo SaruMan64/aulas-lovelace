@@ -374,7 +374,7 @@ main {
   margin: auto;
 }
 main .banner {
-  background-image: url(/img/banner.webp);
+  background-image: url(./img/banner.webp);
   background-size: cover;
   width: 1743px;
   height: 650px;
