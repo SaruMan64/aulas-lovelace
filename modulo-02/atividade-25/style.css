@@ -303,7 +303,7 @@ main {
 main section:last-child {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;;
+  justify-content: space-evenly;
 }
 main section:last-child figure {
   display: flex;
@@ -313,7 +313,7 @@ main section:last-child figure {
   width: 300px;
 }
 main section:last-child img {
-    vertical-align: middle;
+  vertical-align: middle;
   margin-top: 7px;
   margin-bottom: 20px;
   height: 84px;
