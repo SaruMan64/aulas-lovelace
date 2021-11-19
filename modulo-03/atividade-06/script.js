@@ -7,7 +7,7 @@ let textId = [
     ["text2", "O origami é uma arte oriental que consiste em fazer dobraduras de papel, formando assim pequenas esculturas.<br /> Ainda sou iniciante nessa arte, porém, aos poucos realizo novas figuras e estruturas mais complexas e bonitas."],
     ['origami1', 'flor'],
     ['origami2', 'avião'],
-    ['origami3', 'cahorinho e gatinho']
+    ['origami3', 'cachorinho e gatinho']
 ];
 let imgId =[
     ["img-yete", "./img/Yete-Cinza-Paisagem.jpg", "Image of author"],
