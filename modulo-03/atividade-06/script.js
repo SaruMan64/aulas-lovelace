@@ -3,8 +3,8 @@ let textId = [
     ['hobby', 'HOBBY'],
     ['text1', 'Yeté Abunã Marques Labarca, 20 ano, Graduando em Licenciatura em    Física na UFSCar e aspirante a Dev pelo Alpha EdTech.'],
     ['footer', 'Developed by Yeté Labarca'],
-    ['title', 'Meu Hobbie'],
-    ["text2", "O origami é uma arte oriental que consiste em fazer dobraduras de papel, formando assim pequenas esculturas.<br /> Ainda sou iniciante, mas pouco a pouco, vou construindo esculturas mais complexas e bonitas."],
+    ['title', 'Meu Hobby'],
+    ["text2", "O origami é uma arte oriental que consiste em fazer dobraduras de papel, formando assim pequenas esculturas.<br /> Ainda sou iniciante nessa arte, porém, aos poucos realizo novas figuras e estruturas mais complexas e bonitas."],
     ['origami1', 'flor'],
     ['origami2', 'avião'],
     ['origami3', 'cahorinho e gatinho']
