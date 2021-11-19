@@ -19,10 +19,7 @@ let linkId = [
     ["linkName", "#intro"],
     ["button", "#content"]
 ];
-var id;
-var value;
-var otherValue;
-var type;
+
 function addInId(id, value, otherValue = null, type){
     var el = document.getElementById(id);
     if(type === "text"){
