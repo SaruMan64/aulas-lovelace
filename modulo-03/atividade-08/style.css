@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 40px;
+}
+h2:hover{
+    color: #333;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  height: 100px;
+}
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 160px);
+  width: 100%;
+}
+main section {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+main section:first-child {
+  justify-content: right;
+}
+
+main section:last-child div {
+  width: 600px;
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 15px;
+}
+
+.slider {
+  height: 900px;
+  width: 600px;
+  overflow: hidden;
+}
+.img {
+  display: flex;
+  filter: saturate(0);
+}
+.img img {
+  height: 100%;
+}
+
+.img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation: slideToLeft 12s ease infinite;
+  animation: slideToLeft 12s ease infinite;
+}
+.img:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slideToLeft {
+  0%,
+  10% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  12%,
+  27% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  29%,
+  44% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+  46%,
+  61% {
+    -webkit-transform: translateX(-300%);
+    transform: translateX(-300%);
+  }
+  46%,
+  61% {
+    -webkit-transform: translateX(-400%);
+    transform: translateX(-400%);
+  }
+  63%,
+  78% {
+    -webkit-transform: translateX(-500%);
+    transform: translateX(-500%);
+  }
+  80%,
+  100% {
+    -webkit-transform: translateX(-600%);
+    transform: translateX(-600%);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
