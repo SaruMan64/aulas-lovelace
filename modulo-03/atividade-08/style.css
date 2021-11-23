@@ -14,7 +14,7 @@ h2 {
   font-size: 40px;
 }
 h2:hover {
-  color: #333;
+  color: #555;
 }
 
 ul {
@@ -84,8 +84,8 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation: slideToLeft 12s ease infinite;
-  animation: slideToLeft 12s ease infinite;
+  -webkit-animation: slideToLeft 15s ease infinite;
+  animation: slideToLeft 15s ease infinite;
 }
 .img:hover {
   animation-play-state: paused;
