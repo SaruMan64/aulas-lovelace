@@ -1,7 +1,7 @@
 var change = false;
 var operator;
 
-function operator(op){
+function Operator(op){
     operator = op;
     switch (op){
         case "plus":
