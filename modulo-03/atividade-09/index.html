@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pistache</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="./img/pistache.png" alt="" />
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Loja</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="questionario">
+        <form class="questionario" id="form">
+          <h2>Feedback</h2>
+          <h3>Responda o questionário para nos ajudar.</h3>
+          <fieldset class="q1 form">
+            <span>Como você está satisfeito com os nossos produtos?</span>
+            <input type="radio" name="inputSatisfeitoMuitoBom" id="inputSatisfeitoMuitoBom" />
+            <label for="inputSatisfeitoMuitoBom">Muito Bom</label>
+            <input type="radio" name="inputSatisfeitoBom" id="inputSatisfeitoBom" />
+            <label for="inputSatisfeitoBom">Bom</label>
+            <input type="radio" name="inputSatisfeitoNeutro" id="inputSatisfeitoNeutro" />
+            <label for="inputSatisfeitoNeutro">Neutro</label>
+            <input type="radio" name="inputSatisfeitoRuim" id="inputSatisfeitoRuim" />
+            <label for="inputSatisfeitoRuim">Ruim</label>
+            <input type="radio" name="inputSatisfeitoPessimo" id="inputSatisfeitoPessimo" />
+            <label for="inputSatisfeitoPessimo">Péssimo</label>
+            <input type="radio" name="inputSatisfeitoNada" id="inputSatisfeitoNada" />
+            <label for="inputSatisfeitoNada">Nada a declarar</label>
+          </fieldset>
+          <fieldset class="q2 form">
+            <span for="catalogo">O que você acha do nosso catalogo?</span>
+            <input type="radio" name="inputCatalogoMuitoBom" id="inputCatalogoMuitoBom" />
+            <label for="inputCatalogoMuitoBom">Muito Bom</label>
+            <input type="radio" name="inputCatalogoBom" id="inputCatalogoBom" />
+            <label for="inputCatalogoBom">Bom</label>
+            <input type="radio" name="inputCatalogoNeutro" id="inputCatalogoNeutro" />
+            <label for="inputCatalogoNeutro">Neutro</label>
+            <input type="radio" name="inputCatalogoRuim" id="inputCatalogoRuim" />
+            <label for="inputCatalogoRuim">Ruim</label>
+            <input type="radio" name="inputCatalogoPessimo" id="inputCatalogoPessimo" />
+            <label for="inputCatalogoPessimo">Péssimo</label>
+            <input type="radio" name="inputCatalogoNada" id="inputCatalogoNada" />
+            <label for="inputCatalogoNada">Nada a declarar</label>
+          </fieldset>
+          <fieldset class="q3 form">
+            <span>
+              Quanto você recomendaria nossos produtos? (Sendo 1 "Não recomendo"
+              e 5 "Recomendo muito")
+            </span>
+            <input type="radio" name="inputRecomendaria1" id="inputRecomendaria1" />
+            <label for="inputRecomendaria1">1</label>
+            <input type="radio" name="inputRecomendaria2" id="inputRecomendaria2" />
+            <label for="inputRecomendaria2">2</label>
+            <input type="radio" name="inputRecomendaria3" id="inputRecomendaria3" />
+            <label for="inputRecomendaria3">3</label>
+            <input type="radio" name="inputRecomendaria4" id="inputRecomendaria4" />
+            <label for="inputRecomendaria4">4</label>
+            <input type="radio" name="inputRecomendaria5" id="inputRecomendaria5" />
+            <label for="inputRecomendaria5">5</label>
+          </fieldset>
+          <fieldset class="q4 form">
+            <label for="inputComentario">Descreva se Feedback:</label>
+            <textarea
+              name="inputComentario"
+              id="inputComentario"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <fieldset class="q5 form">
+            <div>
+              <label for="inputNome">Nome <span>*</span></label>
+              <input
+                type="text"
+                name="inputNome"
+                id="inputNome"
+                placeholder="Nome"
+              />
+            </div>
+            <div>
+              <label for="inputSobrenome">Sobrenome <span>*</span></label>
+              <input
+                type="text"
+                name="inputSobrenome"
+                id="inputSobrenome"
+                placeholder="Sobrenome"
+              />
+            </div>
+            <div>
+              <label for="inputEmail">Email <span>*</span></label>
+              <input
+                type="text"
+                name="inputEmail"
+                id="inputEmail"
+                placeholder="exemplo@exemplo.com"
+              />
+            </div>
+            <div>
+              <input type="checkbox" name="inputConcordo" id="inputConcordo" />
+              <label for="inputConcordo"
+                >Concordo com os <a href="#">termos</a> de
+                responsabilidade.</label
+              >
+            </div>
+          </fieldset>
+          <button type="button" onclick="myFunction()">Enviar</button>
+        </form>
+      </section>
+      <p id="oi"></p>
+      <!-- <script defer>
+        function myFunction() {
+          var list = [
+            ["SatisfeitoMuitoBom"],
+            ["SatisfeitoBom"],
+            ["SatisfeitoNeutro"],
+            ["SatisfeitoRuim"],
+            ["SatisfeitoPessimo"],
+            ["SatisfeitoNada"],
+            ["CatalogoMuitoBom"],
+            ["CatalogoBom"],
+            ["CatalogoNeutro"],
+            ["CatalogoRuim"],
+            ["CatalogoPessimo"],
+            ["CatalogoNada"],
+            ["Recomendaria1"],
+            ["Recomendaria2"],
+            ["Recomendaria3"],
+            ["Recomendaria4"],
+            ["Recomendaria5"],
+            ["Comentario"],
+            ["Nome"],
+            ["Sobrenome"],
+            ["Email"],
+            ["Concordo"],
+          ];
+
+          let el = document.getElementById("form");
+          console.log(el);
+
+          /* for (let i = 0; i < list.length; i++) {
+            console.log("input" + list[i][0]);
+            let a = document.getElementById("input" + list[i][0]).value;
+            console.log(a);
+            list[i].push(a);
+          } */
+          document.getElementById("oi").innerHTML = list;
+        }
+      </script> -->
+
+      <section id="resposta">
+        <div class="resposta">
+          <h2>Obrigado por responder!!!</h2>
+          <h3>Aqui está sua resposta.</h3>
+          <fieldset class="q1 resp">
+            <span>Como você está satisfeito com os nossos produtos?</span>
+            <input
+              type="radio"
+              name="satisfeito"
+              id="SatisfeitoMuitoBom"
+              disabled
+            />
+            <label for="SatisfeitoMuitoBom">Muito Bom</label>
+            <input type="radio" name="satisfeito" id="SatisfeitoBom" disabled />
+            <label for="SatisfeitoBom">Bom</label>
+            <input
+              type="radio"
+              name="satisfeito"
+              id="SatisfeitoNeutro"
+              disabled
+            />
+            <label for="SatisfeitoNeutro">Neutro</label>
+            <input
+              type="radio"
+              name="satisfeito"
+              id="SatisfeitoRuim"
+              disabled
+            />
+            <label for="SatisfeitoRuim">Ruim</label>
+            <input
+              type="radio"
+              name="satisfeito"
+              id="SatisfeitoPessimo"
+              disabled
+            />
+            <label for="SatisfeitoPessimo">Péssimo</label>
+            <input
+              type="radio"
+              name="satisfeito"
+              id="SatisfeitoNada"
+              disabled
+            />
+            <label for="SatisfeitoNada">Nada a declarar</label>
+          </fieldset>
+          <fieldset class="q2 resp">
+            <span>O que você acha do nosso catalogo?</span>
+            <input
+              type="radio"
+              name="catalogo"
+              id="CatalogoMuitoBom"
+              disabled
+            />
+            <label for="CatalogoMuitoBom">Muito Bom</label>
+            <input type="radio" name="catalogo" id="CatalogoBom" disabled />
+            <label for="CatalogoBom">Bom</label>
+            <input type="radio" name="catalogo" id="CatalogoNeutro" disabled />
+            <label for="CatalogoNeutro">Neutro</label>
+            <input type="radio" name="catalogo" id="CatalogoRuim" disabled />
+            <label for="CatalogoRuim">Ruim</label>
+            <input type="radio" name="catalogo" id="CatalogoPessimo" disabled />
+            <label for="CatalogoPessimo">Péssimo</label>
+            <input type="radio" name="catalogo" id="CatalogoNada" disabled />
+            <label for="CatalogoNada">Nada a declarar</label>
+          </fieldset>
+          <fieldset class="q3 resp">
+            <span>
+              Quanto você recomendaria nossos produtos? (Sendo 1 "Não recomendo"
+              e 5 "Recomendo muito")
+            </span>
+            <input
+              type="radio"
+              name="recomendaria"
+              id="Recomendaria1"
+              disabled
+            />
+            <label for="Recomendaria1">1</label>
+            <input
+              type="radio"
+              name="recomendaria"
+              id="Recomendaria2"
+              disabled
+            />
+            <label for="Recomendaria2">2</label>
+            <input
+              type="radio"
+              name="recomendaria"
+              id="Recomendaria3"
+              disabled
+            />
+            <label for="Recomendaria3">3</label>
+            <input
+              type="radio"
+              name="recomendaria"
+              id="Recomendaria4"
+              disabled
+            />
+            <label for="Recomendaria4">4</label>
+            <input
+              type="radio"
+              name="recomendaria"
+              id="Recomendaria5"
+              disabled
+            />
+            <label for="Recomendaria5">5</label>
+          </fieldset>
+          <fieldset class="q4 resp">
+            <span>Descreva se Feedback:</span>
+            <p id="Comentario"></p>
+          </fieldset>
+          <fieldset class="q5 resp">
+            <div>
+              <label>Nome:</label>
+              <span id="Nome"></span>
+            </div>
+            <div>
+              <label>Sobrenome:</label>
+              <span id="Sobrenome"></span>
+            </div>
+            <div>
+              <label>Email:</label>
+              <span id="Email"></span>
+            </div>
+            <div>
+              <input type="checkbox" name="concordo" id="Concordo" disabled />
+              <label for="Concordo"
+                >Concordo com os <a href="#">termos</a> de
+                responsabilidade.</label
+              >
+            </div>
+          </fieldset>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Developed by Yeté Labarca</span>
+    </footer>
+  </body>
+</html>
