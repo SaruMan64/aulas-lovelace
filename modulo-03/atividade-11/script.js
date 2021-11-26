@@ -56,6 +56,7 @@ function enviar() {
 }
 
 function outroPedido(){
+  document.getElementById("lista").reset(); 
   document.getElementById("menu").hidden = false;
   document.getElementById("resultado").hidden = true;
   pedido = pedido + 1;
