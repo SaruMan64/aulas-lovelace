@@ -10,17 +10,19 @@ function Write() {
     eraseText = input.value / 11;
 
     document.getElementById("text").innerHTML = null;
-
+    let i = 1;
     if (parseInt(input.value) > 11) {
-      for (let i = 1; i <= remainderInput; i++) {
+      while (i <= remainderInput) {
         temp = text.innerHTML + phrase + "<br />";
         text.innerHTML = temp;
         document.getElementById("erase").innerHTML = parseInt(eraseText);
-      }
+        i++;
+    }
     } else {
-      for (let i = 1; i <= input.value; i++) {
+      while (i <= input.value) {
         temp = text.innerHTML + phrase + "<br />";
         text.innerHTML = temp;
+        i++;
       }
     }
   }
