@@ -6,8 +6,8 @@ echo -e "olá mundo!\n";
 # Add 'a' with 'b'
 a=5;
 b=6;
-c=$a+$b;
-echo -e "A soma de $a + $b = $c\n"
+c=$(( $a + $b ));
+echo -e "A soma de $a + $b = $c \n"
 
 # Calculate BMI
 echo "Vamos calcular seu IMC."
