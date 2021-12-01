@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corrida</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Corrida Lovelace</h1>
+      <h3>Escolha a opção da Corrida</h3>
+      <form id="form" onsubmit="return false">
+        <div>
+          <label for="rapido">Corrida Rápida</label>
+          <input type="radio" name="opcao" value="10" id="rapido" />
+        </div>
+        <div>
+          <label for="grande">Corrida Grande Prêmio</label>
+          <input type="radio" name="opcao" value="70" id="grande" />
+        </div>
+        <div>
+          <label for="enduro">Corrida Enduro</label>
+          <input type="radio" name="opcao" value="160" id="enduro" />
+        </div>
+        <div>
+          <label for="personalizado">Corrida Personalizada</label>
+          <input
+            type="radio"
+            name="opcao"
+            value="personalizado"
+            id="personalizado"
+          />
+        </div>
+        <div id="inputVoltas">
+          <label for="voltas">Número de voltas</label>
+          <input type="text" name="personalizado" id="voltas" />
+        </div>
+        <button type="submit" onclick="largada()">Enviar</button>
+      </form>
+      <section>
+        <h3 class="comp">Competidores</h3>
+        <article>
+          <h3>Carro Pedro</h3>
+          <h4>Velocidade Mínima: <span>150</span><span> km/h</span></h4>
+          <h4>Velocidade Máxima: <span>230</span><span> km/h</span></h4>
+          <h4>Derrapagem: <span>3</span><span>%</span></h4>
+        </article>
+        <article>
+          <h3>Carro Juca</h3>
+          <h4>Velocidade Mínima: <span>120</span><span> km/h</span></h4>
+          <h4>Velocidade Máxima: <span>260</span><span> km/h</span></h4>
+          <h4>Derrapagem: <span>5</span><span>%</span></h4>
+        </article>
+        <article>
+          <h3>Carro Pedro</h3>
+          <h4>Velocidade Mínima: <span>180</span><span> km/h</span></h4>
+          <h4>Velocidade Máxima: <span>220</span><span> km/h</span></h4>
+          <h4>Derrapagem: <span>1</span><span>%</span></h4>
+        </article>
+      </section>
+      <div>
+        <br />
+        <h3 id="vencedor">Vencedor:</h3>
+        <p id="results">plancar: <br /></p>
+      </div>
+    </main>
+  </body>
+</html>
