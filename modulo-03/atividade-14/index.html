@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Manipulando Array</h1>
+    <form id="form" onsubmit="return false">
+      <fieldset>
+        <h2>Array</h2>
+        <label for="number0">0</label>
+        <label for="number1">1</label>
+        <label for="number2">2</label>
+        <label for="number3">3</label>
+      </fieldset>
+      <fieldset>
+        <input type="number" id="number0" />
+        <input type="number" id="number1" />
+        <input type="number" id="number2" />
+        <input type="number" id="number3" />
+      </fieldset>
+      <fieldset>
+        <button type="submit" id="rando" onclick="Randon()">
+          Randon Array
+        </button>
+        <button type="submit" id="armazenar" onclick="Armazenar()">
+          Armazenar Array
+        </button>
+        <button type="submit" id="reverter" onclick="Reverter()">
+          Reverter Array
+        </button>
+        <button type="submit" id="ordenar" onclick="Ordenar()">
+          Ordenar Array
+        </button>
+    </fieldset>
+    <button type="reset">Reset</button>
+    </form>
+    <table>
+      <tr>
+        <td>Index</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Array Armazenado</td>
+        <td id="armazenado0"></td>
+        <td id="armazenado1"></td>
+        <td id="armazenado2"></td>
+        <td id="armazenado3"></td>
+      </tr>
+      <tr>
+        <td>Array Revertido</td>
+        <td id="revertido0"></td>
+        <td id="revertido1"></td>
+        <td id="revertido2"></td>
+        <td id="revertido3"></td>
+      </tr>
+      <tr>
+        <td>Array Ordenado</td>
+        <td id="ordenado0"></td>
+        <td id="ordenado1"></td>
+        <td id="ordenado2"></td>
+        <td id="ordenado3"></td>
+      </tr>
+    </table>
+  </body>
+</html>

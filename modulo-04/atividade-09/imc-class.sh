@@ -5,7 +5,7 @@ Inserir () {
         counter=0
         while [ $counter -le 2 ];
         do
-                read -p "Digite sua altura: " number
+                read -p "Digite sua $1: " number
 
         if [[ $number =~ ^[0-9]+$ ]] | [[ $number =~ ^[0-9]+\.?[0-9]*$ ]]; then
                 break;
@@ -51,9 +51,10 @@ Classificacao () {
 
 
 echo "Vamos calcular seu IMC."
-Inserir
+
+Inserir altura
 height=$?
-Inserir
+Inserir peso
 weight=$?
 
 imc=$( echo "$weight / ($height * $height)" | bc)
