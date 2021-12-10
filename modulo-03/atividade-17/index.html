@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corrida 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Corrida Lovelace</h1>
+      <h3>Escolha a opção da Corrida</h3>
+      <form id="form" onsubmit="return false">
+        <label for="rapido">
+          <div>
+            <label for="rapido" class="texto">Corrida Rápida (10 voltas)</label>
+            <input
+              type="radio"
+              name="opcao"
+              value="10"
+              id="rapido"
+              onclick="HiddenInputVoltas()"
+              checked
+            /></div
+        ></label>
+        <label for="grande">
+          <div>
+            <label for="grande" class="texto"
+              >Corrida Grande Prêmio (70 voltas)</label
+            >
+            <input
+              type="radio"
+              name="opcao"
+              value="70"
+              id="grande"
+              onclick="HiddenInputVoltas()"
+            /></div
+        ></label>
+        <label for="enduro">
+          <div for="enduro">
+            <label for="enduro" class="texto"
+              >Corrida Enduro (160 voltas)</label
+            >
+            <input
+              type="radio"
+              name="opcao"
+              value="160"
+              id="enduro"
+              onclick="HiddenInputVoltas()"
+            /></div
+        ></label>
+        <label for="personalizado">
+          <div>
+            <label for="personalizado" class="texto"
+              >Corrida Personalizada</label
+            >
+            <input
+              type="radio"
+              name="opcao"
+              value="personalizado"
+              id="personalizado"
+              onclick="HiddenInputVoltas()"
+            /></div
+        ></label>
+        <div id="inputVoltas" hidden>
+          <label for="voltas" class="texto">Número de voltas</label>
+          <input type="number" name="personalizado" id="voltas" />
+        </div>
+        <button type="submit" onclick="largada()">Enviar</button>
+      </form>
+      <section>
+        <h3 class="comp">Competidores</h3>
+        <article>
+          <h3>Carro Pedro</h3>
+          <h4>Raridade: <span id="rarPedro"></span></h4>
+          <h4>
+            Velocidade Mínima: <span id="minPedro"></span><span> km/h</span>
+          </h4>
+          <h4>
+            Velocidade Máxima: <span id="maxPedro"></span><span> km/h</span>
+          </h4>
+          <h4>Derrapagem: <span id="derPedro"></span><span>%</span></h4>
+          <h4>Pontos: <span id="ptPedro"></span></h4>
+          <h4>Level: <span id="levPedro"></span></h4>
+        </article>
+        <article>
+          <h3>Carro Juca</h3>
+          <h4>Raridade: <span id="rarJuca"></span></h4>
+          <h4>
+            Velocidade Mínima: <span id="minJuca"></span><span> km/h</span>
+          </h4>
+          <h4>
+            Velocidade Máxima: <span id="maxJuca"></span><span> km/h</span>
+          </h4>
+          <h4>Derrapagem: <span id="derJuca"></span><span>%</span></h4>
+          <h4>Pontos: <span id="ptJuca"></span></h4>
+          <h4>Level: <span id="levJuca"></span></h4>
+        </article>
+        <article>
+          <h3>Carro Edna</h3>
+          <h4>Raridade: <span id="rarEdna"></span></h4>
+          <h4>
+            Velocidade Mínima: <span id="minEdna"></span><span> km/h</span>
+          </h4>
+          <h4>
+            Velocidade Máxima: <span id="maxEdna"></span><span> km/h</span>
+          </h4>
+          <h4>Derrapagem: <span id="derEdna"></span><span>%</span></h4>
+          <h4>Pontos: <span id="ptEdna"></span></h4>
+          <h4>Level: <span id="levEdna"></span></h4>
+        </article>
+      </section>
+      <div>
+        <br />
+        <h3 id="vencedor">Vencedor:</h3>
+        <p id="results">plancar: <br /></p>
+        <section id="podio" hidden>
+          <div id="segundo">
+            <p id="2nome" class="podionome"></p>
+            <p id="2volta" class="podiovoltas"></p>
+          </div>
+          <div id="primeiro">
+            <p id="1nome" class="podionome"></p>
+            <p id="1volta" class="podiovoltas"></p>
+          </div>
+          <div id="terceiro">
+            <p id="3nome" class="podionome"></p>
+            <p id="3volta" class="podiovoltas"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

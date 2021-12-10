@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: 980px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+label{
+    width: 49%;
+    cursor: pointer;
+}
+.texto{
+    display: inline-block;
+    width: 310px;
+}
+form div{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#voltas{
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#inputVoltas{
+    width: 99%;
+    column-gap: 200px;
+}
+#inputVoltas label{
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+}
+#inputVoltas[hidden]{
+    display: none;
+}
+
+button{
+    width: 120px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.6rem;
+}
+button:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: background-color .45s;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+span{
+    color: inherit;
+    font-weight: normal;
+}
+.comp{
+    text-align: center;
+    width: 100%;
+}
+
+#podio{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#podio[hidden]{
+    display: none;
+}
+#podio div{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25%;
+}
+#primeiro{
+    height: 100%;
+}
+#segundo{
+    height: 80%;
+}
+#terceiro{
+    height: 60%;
+}
+.podionome{
+    text-align: center;
+    margin-top: -30px;
+    font-size: 28px;
+}
+.podiovoltas{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

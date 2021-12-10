@@ -75,6 +75,7 @@ function RandomCar(carros = Carros) {
     car.velocidadeMin = Number(RandomMinMax(tmp.min, tmp.max).toFixed(2));
     tmp = carros.popular.derrapagem;
     car.derrapagem = Number(RandomMinMax(tmp.min, tmp.max).toFixed(2));
+
     return car;
   } else if ((RC > 60) & (RC <= 95)) {
     let car = { raridade: Object.keys(carros)[1] };
@@ -84,6 +85,7 @@ function RandomCar(carros = Carros) {
     car.velocidadeMin = Number(RandomMinMax(tmp.min, tmp.max).toFixed(2));
     tmp = carros.sport.derrapagem;
     car.derrapagem = Number(RandomMinMax(tmp.min, tmp.max).toFixed(2));
+
     return car;
   } else if ((RC > 95) & (RC <= 100)) {
     let car = { raridade: Object.keys(carros)[2] };
@@ -93,6 +95,7 @@ function RandomCar(carros = Carros) {
     car.velocidadeMin = Number(RandomMinMax(tmp.min, tmp.max).toFixed(2));
     tmp = carros.supersport.derrapagem;
     car.derrapagem = Number(RandomMinMax(tmp.min, tmp.max).toFixed(2));
+
     return car;
   }
 }
@@ -172,8 +175,8 @@ function corrida(carPedro, carJuca, carEdna, voltas) {
 
   let vencedor = document.getElementById("vencedor");
   let results = document.getElementById("results");
-/*   document.getElementById("podio").hidden = false;
- */
+  /*   document.getElementById("podio").hidden = false;
+   */
   if ((pedro[0] > juca[0]) & (pedro[0] > edna[0])) {
     vencedor.innerHTML = "Vencedor: " + "Pedro";
   } else if ((juca[0] > pedro[0]) & (juca[0] > edna[0])) {
