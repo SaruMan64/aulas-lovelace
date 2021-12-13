@@ -168,39 +168,33 @@ function objJogadores() {
 //velocidade + (velocidade*level/100)
 
 function corridaPorVolda(pedro, juca, edna) {
-  let arrayJogadores = [[], [], []];
-  arrayJogadores[0].push("pedro");
-  arrayJogadores[0].push(
-    kmLevel(
+  let arrayJogadores = [{}, {}, {}];
+  arrayJogadores[0].jogador = "pedro";
+  arrayJogadores[0].km = kmLevel(
       pedro.car.velocidadeMin,
       pedro.car.velocidadeMax,
       pedro.car.derrapagem,
       pedro.level
-    )
   );
-  arrayJogadores[1].push("juca");
-  arrayJogadores[1].push(
-    kmLevel(
+  arrayJogadores[1].jogador = "juca";
+  arrayJogadores[1].km = kmLevel(
       juca.car.velocidadeMin,
       juca.car.velocidadeMax,
       juca.car.derrapagem,
       juca.level
-    )
   );
-  arrayJogadores[2].push("edna");
-  arrayJogadores[2].push(
-    kmLevel(
+  arrayJogadores[2].jogador = "edna";
+  arrayJogadores[2].km = kmLevel(
       edna.car.velocidadeMin,
       edna.car.velocidadeMax,
       edna.car.derrapagem,
       edna.level
-    )
   );
 
   return arrayJogadores;
 }
 
-function atribuirLevel(pontosJogador) {
+/* function atribuirLevel(pontosJogador) {
   const level = parseInt(pontosJogador / 450);
   if (level <= 10) {
     levelJogador = level;
@@ -255,6 +249,16 @@ function atribuirPontos(item, index) {
       }
       break;
   }
+} */
+
+function compare( a, b ) {
+  if ( a.km < b.km ){
+    return -1;
+  }
+  if ( a.km > b.km ){
+    return 1;
+  }
+  return 0;
 }
 
 function largada() {
@@ -266,8 +270,7 @@ function largada() {
       jogadoresLargada.juca,
       jogadoresLargada.edna
     );
-    arrayJogadores.sort((a, b) => a[1] - b[1]);
-    arrayJogadores.reverse();
+    arrayJogadores.sort(compare);
     arrayJogadores.forEach(atribuirPontos);
   }
   console.log(jogadoresLargada)
