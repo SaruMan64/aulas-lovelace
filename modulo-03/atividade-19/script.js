@@ -111,17 +111,17 @@ function ordNome() {
   rowTable.sort(dynamicSort("nome"));
   let grupo = grupoPor(rowTable, "nome");
   let array = tableGrupo(rowTable, "nome", grupo);
-
-
   document.getElementById("tBody").innerHTML = " ";
-  array.map(addTable);
+  array.map(addTableNome);
   //rowTable.map(addTableJuros);
 }
 
 function ordData() {
-  rowTable.sort(dynamicSort("data"));
-  document.getElementById("tBody").innerHTML = " ";
-  rowTable.map(addTableJuros);
+    rowTable.sort(dynamicSort("data"));
+    let grupo = grupoPor(rowTable, "data");
+    let array = tableGrupo(rowTable, "data", grupo);
+    document.getElementById("tBody").innerHTML = " ";
+    array.map(addTableData);
 }
 
 function dynamicSort(property) {
@@ -169,7 +169,7 @@ function tableGrupo(rowtable, obj) {
   return array;
 }
 
-function addTable(el, id) {
+function addTableNome(el, id) {
   let tbody = document.getElementById("tBody");
   tbody.innerHTML =
     tbody.innerHTML +
@@ -182,7 +182,19 @@ function addTable(el, id) {
     let chave = Object.keys(grupo);
     grupo[chave[id]].map(addTableJuros);
 }
-
+function addTableData(el, id) {
+    let tbody = document.getElementById("tBody");
+    tbody.innerHTML =
+      tbody.innerHTML +
+      '<td></td><td>' +
+      el[0] +
+      "</td><td></td><td></td><td>Total da data</td><td>" +
+      real(el[1]) +
+      "</td>";
+      let grupo = grupoPor(rowTable, "nome");
+      let chave = Object.keys(grupo);
+      grupo[chave[id]].map(addTableJuros);
+  }
 /* function ordGrupo(rowtable, obj) {
     let a = grupoPor(rowtable, obj);
     a = Object.keys(a)
