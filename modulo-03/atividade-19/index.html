@@ -13,8 +13,7 @@
       <section>
         <form id="form" onsubmit="return false">
           <h1>Calculadora de Juros</h1>
-          <div class="inserir">
-            <label for="inputName" class="nome"
+          <label for="inputName" class="nome"
             >Nome do Cliente: <br />
             <input type="text" name="name" id="inputName" required />
           </label>
@@ -26,21 +25,6 @@
             >Valor da Compra: <br />
             <input type="number" name="value" id="inputValue" step="0.01" required />
           </label>
-        </div>
-        <div class="filtrar">
-          <label for="dataMin" class="datamin">
-            <input type="text" name="dataMin" id="dataMin" />
-          </label>
-          <label for="dataMax" class="datamax">
-            <input type="text" name="dataMax" id="dataMax" />
-          </label>
-          <label for="valueMin" class="valuemin">
-            <input type="text" name="valueMin" id="valueMin" />
-          </label>
-          <label for="valueMax" class="valuemax">
-            <input type="text" name="valueMax" id="valueMax" />
-          </label>
-        </div>
           <fieldset>
             <button id="buttonSubmit" type="submit" onclick="adicionar()">
               Adicionar
