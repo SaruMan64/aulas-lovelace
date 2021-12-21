@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+.voltar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.voltar:hover {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  transition: background-color 0.4s;
+}
+
+main {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.4s;
+}
+
+#numeros {
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+h1,
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
