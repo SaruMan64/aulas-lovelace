@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora multiplo de 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="voltar" href="../index.html">Voltar</a>
+    <main>
+      <form id="form" onsubmit="return false">
+        <label for="id">Digite um número para multiplicar por 5:</label><br />
+        <input type="number" step="1" pattern="\d*" name="number" id="number" />
+        <button type="submit" onclick="calc()">Consultar</button>
+      </form>
+      <p></p>
+    </main>
+  </body>
+</html>
