@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+    <main>
+        <article>
+            <h2>Produto de quatro parâmetros</h2>
+            <form id="form" onsubmit="return false">
+                <label for="number-a">Número 1: 
+                    <input type="number" name="number-a" id="number-a">
+                </label>
+                <label for="number-b">Número 2: 
+                    <input type="number" name="number-b" id="number-b">
+                </label>
+                <label for="number-c">Número 3: 
+                    <input type="number" name="number-c" id="number-c">
+                </label>
+                <label for="number-d">Número 4: 
+                    <input type="number" name="number-d" id="number-d">
+                </label>
+                <button type="submit" id="consultar" onclick="calcProduto()">
+                    calcular
+                </button>
+            </form>
+            <p id="produto"></p>
+        </article>
+        <article>
+            <h2>Concatenar dois vetores</h2>
+            <p>vetor 1:</p>
+            <pre id="vetor1"></pre>
+            <p>vetor 2:</p>
+            <pre id="vetor2"></pre>
+            <p>vetor concatenado:</p>
+            <pre id="vetor3"></pre>
+        </article>
+        <article>
+            <h2>Maior valor de um vetor com números sorteados</h2>
+            <p>vetor random:</p>
+            <pre id="vetorRandom"></pre>
+            <p id="maxNumber"></p>
+        </article>
+    </main>
+</body>
+</html>
