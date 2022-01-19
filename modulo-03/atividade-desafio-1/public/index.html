@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joana - Calculadora de Juros</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="form">
+        <h1>Calculadora de Juros</h1>
+        <form id="insert" onsubmit="return false">
+          <label for="inputName" class="nome"
+              >Nome do Cliente: <br />
+              <input type="text" name="name" id="inputName" required />
+            </label>
+            <label for="inputDate" class="data"
+              >Data de Vencimento: <br />
+              <input type="date" name="date" id="inputDate" required />
+            </label>
+            <label for="inputValue" class="compra"
+              >Valor da Compra: <br />
+              <input
+                type="number"
+                name="value"
+                id="inputValue"
+                step="0.01"
+                required
+              />
+            </label>
+        </form>
+        <form id="filter" onsubmit="return false">
+          <label for="inputDateMin" class="data"
+              >Data mínima: <br />
+              <input type="date" name="date" id="inputDateMin" required />
+            </label>
+            <label for="inputDateMax" class="data"
+              >Data máxima: <br />
+              <input type="date" name="date" id="inputDateMax" required />
+            </label>
+            <label for="inputValueMin" class="compra"
+              >Valor mínimo: <br />
+              <input
+                type="number"
+                name="value"
+                id="inputValueMin"
+                step="0.01"
+                required 
+              />
+            </label>
+            <label for="inputValueMax" class="compra"
+              >Valor máximo: <br />
+              <input
+                type="number"
+                name="value"
+                id="inputValueMax"
+                step="0.01"
+                required 
+              />
+            </label>
+        </form>
+        <div class="button">
+          <button id="buttonSubmit" form="insert" type="submit" onclick="adicionar()">
+            Adicionar
+          </button>
+          <button id="buttonCleanTable" type="button" onclick="limpar()">
+            Limpar Tabela
+          </button>
+          <button id="buttonJuros" type="button" onclick="calcularJuros()">
+            Calcular Juros
+          </button>
+          <button id="buttonOrdNome" type="button" onclick="ordNome()">
+            Ordenar Nomes
+          </button>
+          <button id="buttonOrdData" type="button" onclick="ordData()">
+            Ordenar Data
+          </button>
+          <button id="buttonFiltrar" form="filter" type="submit" onclick="filtrar()">
+            Filtrar
+          </button>
+          <button id="buttonFiltrar" form="filter" type="reset">
+            Remover Filtro
+          </button>
+        </div>
+      </section>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome do Cliente</th>
+              <th>Data de Vencimento</th>
+              <th>Valor da Compra</th>
+              <th>Dias atrasados</th>
+              <th>Juros</th>
+              <th>Valor com Juros</th>
+            </tr>
+          </thead>
+        </table>
+        <div class="tableBody">
+          <table>
+            <thead class="thead">
+              <tr>
+                <th>Nome do Cliente</th>
+                <th>Data de Vencimento</th>
+                <th>Valor da Compra</th>
+                <th>Dias atrasados</th>
+                <th>Juros</th>
+                <th>Valor com Juros</th>
+              </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
