@@ -1,7 +1,7 @@
 const database = require("../database");
 
-module.exports = function anniversary(_month) {
-  const month = Number(_month);
+module.exports = function anniversary(month) {
+  month = Number(month);
   //console.log(month);
   if (month >= 1 && month <= 12) {
     month = month - 1;
