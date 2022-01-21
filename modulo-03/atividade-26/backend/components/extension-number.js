@@ -1,12 +1,10 @@
 const database = require("../database");
 
-module.exports = function extension(_number) {
-  const number = Number(_number);
+module.exports = function extension() {
+  //const number = Number(_number);
 
-  let dataExtensionNumber = database.filter((el) => {
-    if (number === el.extension) {
-      return el;
-    }
+  let dataExtensionNumber = database.map((el) => {
+      return {name: el.name, extension: el.extension};
   });
 
   dataExtensionNumber = dataExtensionNumber.sort((a, b) => {

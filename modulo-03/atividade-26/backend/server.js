@@ -26,8 +26,8 @@ app.get("/employees", (req, res) => {
 });
 
 app.get("/extension", (req, res) => {
-  const number = req.query.number;
-  res.send(extension(number));
+  //const number = req.query.number;
+  res.send(extension());
 });
 
 app.listen(port, () => {
