@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Clientes</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/script.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <h1>Manipular JSON</h1>
+      <div id="btn-nav">
+        <a id="consult" class="btn-nav bnt-active" href="index.html">
+          Consultar
+        </a>
+        <a id="append" class="btn-nav" href="append.html">Inserir</a>
+      </div>
+    </nav>
+    <main id="main-consult">
+      <section class="forms">
+        <form id="form-anniversary" onsubmit="return false">
+          <label for="anniversary">Aniversários </label>
+          <input
+            type="number"
+            id="anniversary"
+            step="1"
+            pattern="\d*"
+            min="1"
+            max="12"
+          />
+          <button type="submit" onclick="anniversary()">vai</button>
+        </form>
+  
+        <form id="form-employees" onsubmit="return false">
+          <label for="employees">Setor </label>
+          <input type="text" id="employees" />
+          <button type="submit" onclick="employees()">vai</button>
+        </form>
+  
+        <form id="form-extension" onsubmit="return false">
+          <label for="extension">Ramais </label>
+          <button type="button" onclick="extension()">vai</button>
+        </form>
+      </section>
+      <h3>Results</h3>
+      <pre></pre>
+      <section class="results" hidden>
+        <table>
+          <tr>
+            <th>Nome</th>
+            <th id="type-consult"></th>
+          </tr>
+        </table> 
+      </section>
+    </main>
+  </body>
+</html>
