@@ -137,3 +137,12 @@ btnResult.addEventListener("click", (event) => {
     calc.setOperand1(result);
   }
 });
+
+const btn = document.querySelectorAll(".btn");
+btn.forEach((el) =>
+  el.addEventListener("click", (event) => {
+    const mysound = document.getElementById("btn-sound");
+    mysound.autoplay = "true";
+    mysound.load();
+  })
+);
