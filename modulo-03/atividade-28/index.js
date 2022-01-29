@@ -1,4 +1,4 @@
-//import { Calculadora } from "./Calculadora.js";
+//import { Calculadora } from "./module/Calculadora.js";
 
 class Calculadora {
   constructor() {
