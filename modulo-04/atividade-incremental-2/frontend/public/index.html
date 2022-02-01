@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input ID</title>
+
+    <link
+      rel="icon"
+      href="https://nodejs.org/static/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="https://nodejs.org/static/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div>
+      <h1>Consultar Servidor Ajax com Fetch</h1>
+
+      <form id="form" onsubmit="return false">
+        <label for="input"
+          >Digite o valor referente ao campo selecionado.</label
+        >
+        <input
+          type="text"
+          id="input"
+          name="input"
+          placeholder="Digite..."
+          list="droplist"
+          required
+        />
+        <datalist id="droplist"> </datalist>
+        <select name="droplist" id="select">
+          <option id="select" value="false" selected disabled hidden>
+            Escolha um campo
+          </option>
+          <option value="id">ID</option>
+          <option value="name">Nome</option>
+          <option value="email">Email</option>
+        </select>
+        <fieldset>
+          <button type="button" onclick="inserir()">Inserir</button>
+          <button type="submit" form="form" onclick="reqConsultar()">
+            Consultar
+          </button>
+          <button
+            type="reset"
+            form="form"
+            onclick="document.location.reload(true)"
+          >
+            reset
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <section id="insert" hidden>
+      <form id="formAppend">
+        <label for="nameAppend">Insira o novo nome:</label>
+        <input id="nameAppend" type="text" required />
+        <label for="emailAppend">Insira o novo email:</label>
+        <input id="emailAppend" type="text" required />
+        <button type="submit" form="formAppend" onclick="append()">
+          Adicionar
+        </button>
+      </form>
+    </section>
+
+    <table id="table" hidden>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Delete Person</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </body>
+</html>

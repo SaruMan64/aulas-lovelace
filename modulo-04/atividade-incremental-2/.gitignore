@@ -1,0 +1,8 @@
+backend/node_modules
+backend/*.zip
+backend/*.jpeg
+frontend/node_modules
+frontend/*.zip
+frontend/*.jpeg
+*.zip
+*.jpeg
