@@ -102,7 +102,7 @@ async function append() {
       },
       body: JSON.stringify(obj),
     });
-    console.log(resFeach);
+    document.location.reload(true);
   } catch (e) {
     console.error(e);
   }

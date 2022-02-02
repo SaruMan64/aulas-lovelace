@@ -23,7 +23,7 @@ module.exports = async function append(_reqBody) {
     }
     data.push(newObj);
     await jsonfs.writeJSON("./database.json", data);
-    return {};
+    return true;
   } catch (e) {
     return e;
   }
