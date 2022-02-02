@@ -4770,11 +4770,6 @@
     "email": "chambers_randolph@repetwire.com"
   },
   {
-    "id": 955,
-    "name": "Wallace Saunders",
-    "email": "wallace_saunders@yurture.com"
-  },
-  {
     "id": 956,
     "name": "Clarissa Parks",
     "email": "clarissa_parks@slambda.com"
@@ -4986,7 +4981,12 @@
   },
   {
     "id": 998,
-    "name": "Moss Kinney",
-    "email": "moss_kinney@colaire.com"
+    "name": "Jaime Burbano",
+    "email": "jaime.burbano@gmail.com"
+  },
+  {
+    "id": 999,
+    "name": "Yeté Labarca",
+    "email": "yete.abuna@gmail.com"
   }
 ]

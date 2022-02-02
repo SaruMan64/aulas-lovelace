@@ -100,7 +100,7 @@ async function append() {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
-      body: obj,
+      body: JSON.stringify(obj),
     });
     console.log(resFeach);
   } catch (e) {

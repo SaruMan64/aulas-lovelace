@@ -16,7 +16,7 @@ app.get("/consulta/:content", async (req, res) => {
   const resCliente = await consult(objReq);
 
   if (resCliente.length) {
-    res.send(resCliente);
+    res.json(resCliente);
   } else {
     res.send("404");
   }
@@ -27,19 +27,20 @@ app.get("/incremental/:content", async (req, res) => {
   const resCliente = await incremental(incReq);
 
   if (resCliente.length) {
-    res.send(resCliente);
+    res.json(resCliente);
   } else {
     res.send("404");
   }
 });
 
 app.post("/append", async (req, res) => {
-  res.send(await append(req.body));
+  console.log(req.body);
+  res.json(await append(req.body));
 });
 
 app.delete("/delete/:id", async (req, res) => {
   console.log(req.params.id);
-  res.send(await deletePerson(req.params.id));
+  res.json(await deletePerson(req.params.id));
 });
 
 app.listen(port, () => {
