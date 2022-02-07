@@ -78,51 +78,51 @@ $(document).ready(function () {
   let num1 = "";
   let num2 = "";
   let operation;
-  const display1 = document.getElementById("display1");
-  const display2 = document.getElementById("display2");
+  const display1 = $("#display1");
+  const display2 = $("#display2");;
 
-  $('.btn.number').on('click', () => {
+  $('.btn.number').on('click', function () {
     switch (count) {
       case 0:
-        //console.log(event.target.value);
-        num1 += event.target.value;
-        display2.innerHTML = num1;
+        //console.log($(this).attr('value'));
+        num1 += $(this).attr('value');
+        display2.text(num1);
         break;
       case 1:
-        //console.log(event.target.value);
-        num2 += event.target.value;
-        display2.innerHTML = num2;
+        //console.log($(this).attr('value'));
+        num2 += $(this).attr('value');
+        display2.text(num2);
         break;
     }
   });
 
-  $('.btn.operation').on('click', () => {
+  $('.btn.operation').on('click', function () {
     if (count === 0) {
       calc.setOperand1(num1);
-      operation = event.target.value;
-      //console.log(event.target.value);
+      operation = $(this).attr('value');
+      //console.log($(this).attr('value'));
       calc.setOperation(operation);
-      display1.innerHTML = num1 + " " + operation;
-      display2.innerHTML = "";
+      display1.text(`${num1} ${operation}`);
+      display2.text('');
       count = 1;
     }
   });
 
-  $('.btn.clear').on('click', () => {
+  $('.btn.clear').on('click', function () {
     calc.clearCalculator();
     num1 = "";
     num2 = "";
     count = 0;
-    display1.innerHTML = "";
-    display2.innerHTML = "";
+    display1.text("");
+    display2.text("");
   });
 
-  $('.btn.result').on('click', () => {
+  $('.btn.result').on('click', function () {
     calc.setOperand2(num2);
     let result = calc.getResult();
     if (result.toString().length <= 14) {
-      display1.innerHTML = num1 + " " + operation + " " + num2;
-      display2.innerHTML = result;
+      display1.text(`${num1} ${operation} ${num2}`)
+      display2.text(result);
       //console.log("result " + result);
       num1 = result;
       calc.setOperand1(result);
@@ -137,7 +137,7 @@ $(document).ready(function () {
     </audio>
   `);
 
-  $('.btn').on('click', () => {
+  $('.btn').on('click', function () {
     const mysound = document.getElementById("btn-sound");
     mysound.autoplay = "true";
     mysound.load();
