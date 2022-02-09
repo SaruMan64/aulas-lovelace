@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotação</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn-icons-png.flaticon.com/512/893/893078.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn-icons-png.flaticon.com/32/893/893078.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn-icons-png.flaticon.com/16/893/893078.png"
+    />
+    <link
+      rel="manifest"
+      href="https://cdn-icons-png.flaticon.com/512/893/893078.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Cotação</h1>
+      <form id="form" onsubmit="return false">
+        <section>
+          <select id="moneyin" required></select>
+          <select id="moneyout" required></select>
+        </section>
+        <section>
+          <input id="datein" type="date" required />
+          <input id="dateout" type="date" required disabled />
+        </section>
+        <button type="submit" form="form" id="btn-submit">Consultar</button>
+      </form>
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="1">Moeda</th>
+            <th rowspan="5">data</th>
+            <th rowspan="1">valor mínimo</th>
+            <th rowspan="1">valor máximo</th>
+            <th rowspan="1">valor de fechamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
