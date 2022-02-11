@@ -1,5 +1,8 @@
 $(document).ready(function () {
     $("#btn").on('click', () => {
+        $("label").toggle();
+        $("input").toggle();
+        $("button").toggle();
         const cep = $("#cep").val();
         $.ajax({
             url: `https://cep.awesomeapi.com.br/json/${cep}`,
