@@ -10,22 +10,27 @@
     <script src="script.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <form id="form" onsubmit="return false">
+    <section id="menu">
       <div class="container">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <label>CEP: </label
-      ><input
-        type="text"
-        id="cep"
-        maxlength="8"
-        placeholder="12345678"
-        required
-      />
-      <button type="submit" id="btn">Pesquisar</button>
-    </form>
+      <section id="toggle">
+        <form id="form" onsubmit="return false">
+          <label>CEP: </label
+          ><input
+            type="text"
+            id="cep"
+            maxlength="8"
+            placeholder="12345678"
+            required
+          />
+          <button type="submit" id="btn">Pesquisar</button>
+        </form>
+        <div id="info"></div>
+      </section>
+    </section>
     <section id="google-maps">
       <h1>Digite o CEP para motrarmos onde fica.</h1>
     </section>

@@ -8,16 +8,23 @@ $(document).ready(function () {
             `);
             return false;
         }
-        $("label").toggle();
-        $("input").toggle();
-        $("button").toggle();
-        $("#form").trigger("reset");
+        toggleMenu();
         $.ajax({
             url: `https://cep.awesomeapi.com.br/json/${cep}`,
             success: function (response) {
                 const maps = `https://www.google.com/maps?api=1&q=${response.lat}%2C${response.lng}&hl=es;z=14&output=embed`
-                //const mapskey = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAKNBkET_-yYAPBrSJdRrJ9kBRsZ-ZG7GI&q=${response.lat},${response.lng}`
                 GoogleMapsIframe(maps);
+                const info = `
+                <p><strong>CEP: </strong><span>${response.cep}</span></p>
+                <p><strong>Endereço: </strong><span>${response.address}, ${response.district}</span></p>
+                <p><strong>Cidade: </strong><span>${response.city}</span></p>
+                <p><strong>Latitude: </strong><span>${response.lat}</span></p>
+                <p><strong>Longitude: </strong><span>${response.lgn}</span></p>
+                <p><strong>Cidade IBGE: </strong><span>${response.city_ibge}</span></p>
+                <p><strong>DDD: </strong><span>${response.ddd}</span></p>
+                `;
+                $("#info").html("");
+                $("#info").html(info);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 if (XMLHttpRequest.responseJSON.status === 404) {
@@ -28,18 +35,13 @@ $(document).ready(function () {
                     console.error("Code: " + XMLHttpRequest.responseJSON.code);
                     console.error("Error: " + errorThrown);
                     console.error("Error: " + XMLHttpRequest.responseJSON.message);
-                    $("label").toggle();
-                    $("input").toggle();
-                    $("button").toggle();
-                    $("#form").trigger("reset");
+                    toggleMenu();
                 }
             }
         })
     });
     $(".container").on('click', () => {
-        $("label").toggle();
-        $("input").toggle();
-        $("button").toggle();
+        toggleMenu();
     })
 
 });
@@ -48,4 +50,10 @@ function GoogleMapsIframe(url) {
     $("#google-maps").html("");
     $("#google-maps").append(`<iframe id="maps" width="100%" height="100%" style="border: 0"
     loading="lazy" allowfullscreen src="${url}"></iframe>`);
+}
+
+function toggleMenu() {
+    $("#toggle").toggle();
+    $("#info").toggle();
+    $("#form").trigger("reset");
 }
