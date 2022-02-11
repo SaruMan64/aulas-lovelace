@@ -1,9 +1,17 @@
 $(document).ready(function () {
     $("#btn").on('click', () => {
+        const cep = $("#cep").val();
+        if (cep.length === 0) {
+            $("#google-maps").html(`
+            <h1>Não foi digitado nada...</h1>
+            <h2>Digite o CEP para motrarmos onde fica.</h2>
+            `);
+            return false;
+        }
         $("label").toggle();
         $("input").toggle();
         $("button").toggle();
-        const cep = $("#cep").val();
+        $("#form").trigger("reset");
         $.ajax({
             url: `https://cep.awesomeapi.com.br/json/${cep}`,
             success: function (response) {
@@ -11,12 +19,19 @@ $(document).ready(function () {
                 GoogleMapsIframe(maps);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                console.error("Status: " + textStatus);
-                console.error("Error: " + errorThrown);
-                $("#google-maps").html(`
-                <h2>${"Status: " + textStatus}</h2>
-                <h2>${"Error: " + errorThrown}</h2>
+                if (XMLHttpRequest.responseJSON.status === 404) {
+                    $("#google-maps").html(`
+                    <h1>${XMLHttpRequest.responseJSON.message}</h1>
                     `);
+                    console.error("Status: " + textStatus);
+                    console.error("Code: " + XMLHttpRequest.responseJSON.code);
+                    console.error("Error: " + errorThrown);
+                    console.error("Error: " + XMLHttpRequest.responseJSON.message);
+                    $("label").toggle();
+                    $("input").toggle();
+                    $("button").toggle();
+                    $("#form").trigger("reset");
+                }
             }
         })
     });
