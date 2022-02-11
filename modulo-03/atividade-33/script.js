@@ -15,6 +15,7 @@ $(document).ready(function () {
                 const maps = `https://www.google.com/maps?api=1&q=${response.lat}%2C${response.lng}&hl=es;z=14&output=embed`
                 GoogleMapsIframe(maps);
                 const info = `
+                <h1>Informações:</h1>
                 <p><strong>CEP: </strong><span>${response.cep}</span></p>
                 <p><strong>Endereço: </strong><span>${response.address}, ${response.district}</span></p>
                 <p><strong>Cidade: </strong><span>${response.city}</span></p>
