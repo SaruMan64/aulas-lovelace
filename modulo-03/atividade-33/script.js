@@ -17,6 +17,11 @@ $(document).ready(function () {
             }
         })
     });
+    $(".container").on('click', () => {
+        $("label").toggle();
+        $("input").toggle();
+        $("button").toggle();
+    })
 
 });
 
