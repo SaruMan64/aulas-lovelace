@@ -19,8 +19,8 @@ $(document).ready(function () {
                 <p><strong>CEP: </strong><span>${response.cep}</span></p>
                 <p><strong>Endereço: </strong><span>${response.address}, ${response.district}</span></p>
                 <p><strong>Cidade: </strong><span>${response.city}</span></p>
-                <p><strong>Latitude: </strong><span>${response.lat}</span></p>
-                <p><strong>Longitude: </strong><span>${response.lng}</span></p>
+                <p><strong>Latitude: </strong><span>${response.lat}º</span></p>
+                <p><strong>Longitude: </strong><span>${response.lng}º</span></p>
                 <p><strong>Cidade IBGE: </strong><span>${response.city_ibge}</span></p>
                 <p><strong>DDD: </strong><span>${response.ddd}</span></p>
                 `;
