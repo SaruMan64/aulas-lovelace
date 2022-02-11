@@ -15,7 +15,8 @@ $(document).ready(function () {
         $.ajax({
             url: `https://cep.awesomeapi.com.br/json/${cep}`,
             success: function (response) {
-                const maps = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAKNBkET_-yYAPBrSJdRrJ9kBRsZ-ZG7GI&q=${response.lat},${response.lng}`
+                const maps = `https://www.google.com/maps?api=1&q=${response.lat}%2C${response.lng}&hl=es;z=14&output=embed`
+                //const mapskey = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAKNBkET_-yYAPBrSJdRrJ9kBRsZ-ZG7GI&q=${response.lat},${response.lng}`
                 GoogleMapsIframe(maps);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
