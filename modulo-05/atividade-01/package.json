@@ -1,0 +1,21 @@
+{
+  "name": "controle-de-sessao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch public/stylesheets/scss:public/stylesheets/css",
+    "dev": "nodemon server.js & npm run scss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
