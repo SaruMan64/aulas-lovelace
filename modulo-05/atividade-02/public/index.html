@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>controle de sessão</title>
+    <link rel="stylesheet" href="stylesheets/css/index.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header id="login">
+      <h1>Faça login!</h1>
+      <form id="form" onsubmit="return false">
+        <!-- <input type="hidden" value="156654" id="token" /> -->
+        <input type="text" id="name" name="name" placeholder="Insira seu nome..." />
+        <input type="password" id="password" name="password" placeholder="Insira sua senha..." />
+        <button type="submit" onclick="login()">ENTRAR</button>
+      </form>
+    </body>
+  </header>
+  <main id="content" class="hidden">
+    <h1 id="nameClient"></h1>
+    <p>Seu numero de telephone é: <span id="phoneClient"></span></p>
+    <p>Você gosta de: <span id="likeClient"></span></p>
+    <button type="button" onclick="logout()">SAIR</button>
+  </main>
+</html>
