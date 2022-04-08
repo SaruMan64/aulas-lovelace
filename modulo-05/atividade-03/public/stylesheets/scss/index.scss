@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 60vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  & h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    font-size: 10vmin;
+  }
+
+  & form {
+    height: 40vmin;
+    width: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.3vmin solid black;
+    border-radius: 5%/10%;
+
+    & input {
+      height: 7vmin;
+      width: 50vmin;
+      outline: none;
+      box-sizing: border-box;
+      border-bottom: 0.3vmin solid black;
+      text-align: center;
+      padding: 0.5vmin;
+      font-size: 3vmin;
+    }
+
+    & button {
+      width: 15vmin;
+      height: 7vmin;
+      background-color: white;
+      box-sizing: border-box;
+      border-radius: 5%/10%;
+      border: 0.3vmin solid black;
+      font-size: 3vmin;
+    }
+
+    & button:hover {
+      color: white;
+      background-color: black;
+      transition: blackground-color 400ms;
+    }
+  }
+}
+
+main {
+  height: 60vmin;
+  width: 100vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.3vmin solid black;
+  border-radius: 5%/10%;
+
+  & h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    font-size: 7vmin;
+  }
+
+  & p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: left;
+    font-size: 5vmin;
+
+    & span {
+      color: black;
+      background: url(image) repeat-y center center/100% 100%;
+      text-decoration: underline;
+    }
+  }
+  & button {
+    width: 15vmin;
+    height: 7vmin;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5%/10%;
+    border: 0.3vmin solid black;
+    font-size: 3vmin;
+  }
+
+  & button:hover {
+    color: white;
+    background-color: black;
+    transition: blackground-color 400ms;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: flex !important;
+}
