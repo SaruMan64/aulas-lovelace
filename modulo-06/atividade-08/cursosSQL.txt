@@ -1,0 +1,86 @@
+CREATE TABLE public.cursos (
+    "id" serial NOT NULL,
+    "nome" varchar(120) NOT NULL,
+    CONSTRAINT "cursos_pk" PRIMARY KEY ("id")
+) WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE public.alunos (
+    "id" serial NOT NULL,
+    "nome" varchar(120) NOT NULL,
+    CONSTRAINT "alunos_pk" PRIMARY KEY ("id")
+) WITH (
+  OIDS=FALSE
+);
+
+CREATE TABLE public.alunos_cursos (
+    "id" serial NOT NULL,
+    "id_curso" integer NOT NULL,
+    "id_aluno" integer NOT NULL,
+    "nota" float,
+    CONSTRAINT "alunos_cursos_pk" PRIMARY KEY ("id")
+) WITH (
+  OIDS=FALSE
+);
+
+ALTER TABLE "alunos_cursos" ADD CONSTRAINT "alunos_cursos_fk0" FOREIGN KEY ("id_curso") REFERENCES "cursos"("id");
+ALTER TABLE "alunos_cursos" ADD CONSTRAINT "alunos_cursos_fk1" FOREIGN KEY ("id_aluno") REFERENCES "alunos"("id");
+
+-------------------------------------------------------------------
+
+INSERT INTO cursos("nome") values ('JavaScript');
+INSERT INTO cursos("nome") values ('Python');
+INSERT INTO cursos("nome") values ('C');
+INSERT INTO cursos("nome") values ('C++');
+INSERT INTO cursos("nome") values ('GO');
+INSERT INTO cursos("nome") values ('Ruby');
+
+INSERT INTO alunos("nome") values ('Yeté Labarca');
+INSERT INTO alunos("nome") values ('Orlando');
+INSERT INTO alunos("nome") values ('David');
+INSERT INTO alunos("nome") values ('Samuel');
+INSERT INTO alunos("nome") values ('Luan');
+INSERT INTO alunos("nome") values ('Núbia');
+
+SELECT * from cursos;
+SELECT * from alunos;
+
+-------------------------------------------------------------------
+
+TRUNCATE public.alunos RESTART IDENTITY CASCADE; 
+TRUNCATE public.cursos RESTART IDENTITY CASCADE;
+DROP TABLE IF EXISTS public.alunos_cursos CASCADE;
+
+-------------------------------------------------------------------
+
+SELECT * FROM public.alunos WHERE nome LIKE 'Y%';
+
+SELECT * FROM public.alunos WHERE id BETWEEN 1 AND 3;
+
+SELECT * FROM public.alunos WHERE id IN (1, 3, 4);
+
+SELECT * FROM public.alunos WHERE id NOT IN (1, 3, 4);
+
+-------------------------------------------------------------------
+
+ALTER TABLE public.alunos ADD COLUMN usuario_atualizacao varchar(30);
+ALTER TABLE public.alunos ADD COLUMN data_atualizacao date;
+
+UPDATE public.alunos SET nome = 'Cleberson', usuario_atualizacao = 'Yeté', data_atualizacao = NOW() WHERE id = 2;
+
+-------------------------------------------------------------------
+
+INSERT INTO alunos_cursos(id_aluno, id_curso, nota) VALUES (1, 2, 9);
+INSERT INTO alunos_cursos(id_aluno, id_curso, nota) VALUES (5, 4, 3);
+INSERT INTO alunos_cursos(id_aluno, id_curso, nota) VALUES (2, 3, 7);
+INSERT INTO alunos_cursos(id_aluno, id_curso, nota) VALUES (3, 1, 4);
+INSERT INTO alunos_cursos(id_aluno, id_curso, nota) VALUES (4, 6, 5);
+INSERT INTO alunos_cursos(id_aluno, id_curso, nota) VALUES (6, 5, 1);
+
+SELECT * FROM public.alunos_cursos INNER JOIN public.alunos ON alunos.id = alunos_cursos.id_aluno;
+
+
+
+
+
