@@ -1,0 +1,34 @@
+[
+  {
+    "fullName": "Yeté Labarca",
+    "username": "YAML",
+    "email": "yete.abuna@gmail.com",
+    "password": "1234",
+    "id": 1,
+    "userType": "client"
+  },
+  {
+    "fullName": "Orlando Burbano",
+    "username": "Orlando",
+    "email": "orlando@burbano.com",
+    "password": "1234",
+    "id": 2,
+    "userType": "client"
+  },
+  {
+    "fullName": "Anderson de Alcantra",
+    "username": "anderson",
+    "email": "anderson@alcantra.com",
+    "password": "1234",
+    "id": 3,
+    "userType": "client"
+  },
+  {
+    "fullName": "João Ferreira",
+    "username": "joao",
+    "email": "joao@ferreira.com",
+    "password": "1234",
+    "id": 4,
+    "userType": "client"
+  }
+]

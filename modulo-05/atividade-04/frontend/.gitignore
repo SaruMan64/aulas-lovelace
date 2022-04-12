@@ -1,0 +1,5 @@
+package-lock.json
+*.jpeg
+*.zip
+/node_modules
+**/css/index*
