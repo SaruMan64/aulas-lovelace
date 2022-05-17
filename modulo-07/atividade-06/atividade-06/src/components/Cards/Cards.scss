@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* Firefox */
+/* input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+section {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40vmin);
+  height: 80vmin;
+  width: 80vmin;
+  background-color: #66ba4f;
+  box-shadow: 0px 0px 40px 10px #448c3f;
+  border-radius: 50%;
+  background: radial-gradient(circle at 77% 80%, #fdfeb4 2.5%, transparent 2.5%),
+    radial-gradient(circle at 75% 83%, #fdfeb4 2%, transparent 2%),
+    radial-gradient(circle at 79% 83%, #fdfeb4 1%, transparent 1%),
+    radial-gradient(circle at 45% 13%, #ffffd5 1.5%, transparent 1.5%),
+    radial-gradient(circle at 42% 13%, #ffffd5 2%, transparent 2%),
+    radial-gradient(circle at 38% 14%, #ffffd5 1.5%, transparent 1.5%),
+    radial-gradient(circle at 20% 24%, #fdfeb4 1%, transparent 1%),
+    radial-gradient(circle at 21% 23%, #fdfeb4 1%, transparent 1%),
+    radial-gradient(circle at 51% 13%, #fdfeb4 1%, transparent 1%),
+    radial-gradient(circle at 81% 33%, #fdfeb4 1%, transparent 1%),
+    radial-gradient(circle at 85% 36%, #fdfeb4 2%, transparent 2%),
+    radial-gradient(circle at 21% 46%, #fdfeb4 1%, transparent 1%),
+    radial-gradient(circle at 20% 51%, #fdfeb4 2%, transparent 2%),
+    radial-gradient(circle at 53% 51%, transparent 64%, #43a93e 64%),
+    radial-gradient(circle at 47% 59%, transparent 64%, #43843e 64%),
+    radial-gradient(circle at 47% 60%, transparent 59%, #1a9042 59%),
+    radial-gradient(circle at 50% 59%, transparent 55%, #1b863c 55%),
+    radial-gradient(circle at 45% 60%, transparent 55%, #399c49 55%),
+    radial-gradient(circle at 47% 60%, transparent 46%, #1a9042 46%),
+    radial-gradient(circle at 46% 55%, transparent 43%, #75b03b 43%),
+    radial-gradient(circle at 36% 55%, transparent 43%, #a9cb48 43%),
+    radial-gradient(circle at 50% 60%, transparent 40%, #66ba4f 40%),
+    radial-gradient(circle at 50% 53%, transparent 40%, #e5e051 37%),
+    radial-gradient(circle at 30% 48%, transparent 40%, #eaf157 37%),
+    radial-gradient(circle at 57% 69%, transparent 40%, #eaf157 40%),
+    radial-gradient(circle at 40% 88%, transparent 40%, #e9e072 37%),
+    radial-gradient(circle at 67% 54%, transparent 40%, #faeb7b 37%),
+    radial-gradient(circle at 49% 35%, transparent 40%, #fff8c5 37%),
+    radial-gradient(circle at 79% 59%, transparent 40%, #fffe9c 37%),
+    radial-gradient(circle at 50% 50%, #fdfeb4 100%, #fdfeb4 100%);
+}
+
+header {
+  width: 100%;
+  height: 20vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2vmin;
+  color: white;
+}
+
+h1 {
+  font-size: 5vmin;
+}
+
+label {
+  width: 45vmin;
+  height: 5vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 5vmin;
+}
+
+input {
+  width: 10vmin;
+  height: 5vmin;
+  border: 1px solid white;
+  border-radius: 10vmin;
+  font-size: 5vmin;
+  text-align: center;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards {
+  width: 100vmin;
+  padding: 0 20vmin 0 20vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5vmin;
+  column-gap: 5vmin;
+
+  height: 80vmin;
+  overflow: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.dead,
+.unknown,
+.alive {
+  width: 20vmin;
+  height: 40vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  & figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  & .alive-stripe {
+    display: none;
+  }
+
+  & .dead-stripe {
+    width: 20vmin;
+    height: 40vmin;
+    position: absolute;
+    z-index: 1;
+    background: rgba($color: gray, $alpha: 0.5);
+  }
+
+  & .dead-stripe span {
+    width: 100%;
+    height: 5vmin;
+    position: absolute;
+    top: calc(25% - 2.5vmin);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+    background: rgba($color: red, $alpha: 0.5);
+    text-transform: uppercase;
+  }
+
+  & .unknown-stripe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: rgba($color: gray, $alpha: 0.5);
+  }
+
+  & .unknown-stripe span {
+    width: 100%;
+    height: 5vmin;
+    position: absolute;
+    top: calc(25% - 2.5vmin);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+    background: rgba($color: gray, $alpha: 0.8);
+    text-transform: uppercase;
+  }
+
+  & img {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    object-fit: cover;
+  }
+
+  & > div {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vmin;
+    text-align: center;
+
+    & strong {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.dead > div {
+  background: red;
+}
+.unknown > div {
+  background: gray;
+}
+.alive > div {
+  background: green;
+}
