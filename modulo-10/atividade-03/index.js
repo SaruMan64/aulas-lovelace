@@ -17,8 +17,9 @@ app.get("/nome", (req, res) => {
 
             if (nome) {
                 res.status(200).send({
-                    nome: JSON.parse(nome),
                     time: Date.now() - start,
+                    length: (JSON.parse(nome)).length,
+                    nome: JSON.parse(nome),
                     message: "data retrieved from the cache"
                 });
             } else {
@@ -44,8 +45,9 @@ app.get("/nome", (req, res) => {
 
                 redis.setex(searchTerm, 10, JSON.stringify(result.rows));
                 res.status(200).send({
-                    nome: result.rows,
                     time: Date.now() - start,
+                    length: result.rows.length,
+                    nome: result.rows,
                     message: "cache miss"
                 });
             }
