@@ -1,0 +1,19 @@
+CREATE TABLE redis.nomes (
+	"id" serial NOT NULL UNIQUE,
+	"nome" varchar(255) NOT NULL,
+	"sobre_nome" varchar(255) NOT NULL,
+	CONSTRAINT "nomes_pk" PRIMARY KEY ("id")
+) WITH (
+  OIDS=FALSE
+);
+
+insert into redis.nomes (nome, sobre_nome) values ('Yeté', 'Labarca');
+insert into redis.nomes (nome, sobre_nome) values ('Anderson', 'Ferreira');
+insert into redis.nomes (nome, sobre_nome) values ('Jaime', 'Burbano');
+insert into redis.nomes (nome, sobre_nome) values ('Emmanuelle', 'Oliveira');
+insert into redis.nomes (nome, sobre_nome) values ('João', 'Lucas');
+insert into redis.nomes (nome, sobre_nome) values ('Tiago', 'Nobrega');
+insert into redis.nomes (nome, sobre_nome) values ('Orlando', 'Santos');
+
+
+select * from redis.nomes
